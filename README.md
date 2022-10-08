@@ -10,3 +10,5 @@ cd B21DZ08-Project-6
 yarn
 yarn start
 ```
+
+miras yo
