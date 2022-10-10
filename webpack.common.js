@@ -93,6 +93,48 @@ module.exports = {
       chunks: ['page']
     }),
 
+    //Article
+    new HtmlWebpackPlugin({
+      template: "./src/history.html",
+      filename: "./history.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/learning.html",
+      filename: "./learning.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/library.html",
+      filename: "./library.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/journal.html",
+      filename: "./journal.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/about.html",
+      filename: "./about.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/learning/start.html",
+      filename: "./learning/start.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/learning/programms.html",
+      filename: "./learning/programms.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/learning/tutorials.html",
+      filename: "./learning/tutorials.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/library/models.html",
+      filename: "./library/models.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/library/textures.html",
+      filename: "./library/textures.html",
+    }),
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
