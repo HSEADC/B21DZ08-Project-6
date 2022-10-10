@@ -13,6 +13,6 @@ yarn start
 
 miras yo
 
-poli yo
+poli yo yo yo
 
 arina yo
