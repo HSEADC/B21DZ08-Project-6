@@ -16,9 +16,3 @@ miras yo
 poli yo yo yo
 
 arina yo
-<<<<<<< HEAD
-=======
-
-test111
- cring
->>>>>>> refs/remotes/origin/main
