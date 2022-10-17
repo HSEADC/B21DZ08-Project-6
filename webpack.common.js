@@ -84,27 +84,19 @@ module.exports = {
       chunks: ['index']
     }),
 
-    // Internal pages
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/pages/page.html',
-      filename: './pages/page.html',
-      chunks: ['page']
-    }),
+    // // Internal pages
+    // new HtmlWebpackPlugin({
+    //   hash: true,
+    //   scriptLoading: 'blocking',
+    //   template: './src/pages/page.html',
+    //   filename: './pages/page.html',
+    //   chunks: ['page']
+    // }),
 
     //Article
     new HtmlWebpackPlugin({
       template: "./src/history.html",
       filename: "./history.html",
-    }),
-    new HtmlWebpackPlugin({
-      template: "./src/learning.html",
-      filename: "./learning.html",
-    }),
-    new HtmlWebpackPlugin({
-      template: "./src/library.html",
-      filename: "./library.html",
     }),
     new HtmlWebpackPlugin({
       template: "./src/journal.html",
@@ -115,24 +107,20 @@ module.exports = {
       filename: "./about.html",
     }),
     new HtmlWebpackPlugin({
-      template: "./src/learning/start.html",
-      filename: "./learning/start.html",
+      template: "./src/start.html",
+      filename: "./start.html",
     }),
     new HtmlWebpackPlugin({
-      template: "./src/learning/programms.html",
-      filename: "./learning/programms.html",
+      template: "./src/tutorials.html",
+      filename: "./tutorials.html",
     }),
     new HtmlWebpackPlugin({
-      template: "./src/learning/tutorials.html",
-      filename: "./learning/tutorials.html",
+      template: "./src/models.html",
+      filename: "./models.html",
     }),
     new HtmlWebpackPlugin({
-      template: "./src/library/models.html",
-      filename: "./library/models.html",
-    }),
-    new HtmlWebpackPlugin({
-      template: "./src/library/textures.html",
-      filename: "./library/textures.html",
+      template: "./src/textures.html",
+      filename: "./textures.html",
     }),
 
     // Partials

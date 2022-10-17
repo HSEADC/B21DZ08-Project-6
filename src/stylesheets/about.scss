@@ -1,0 +1,12 @@
+body.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #B3DEDB;
+  
+    & > div,
+    & > a {
+      margin: 10px 0;
+    }
+  }

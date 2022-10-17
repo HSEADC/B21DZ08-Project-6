@@ -1,0 +1,12 @@
+body.textures {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #77b986;
+  
+    & > div,
+    & > a {
+      margin: 10px 0;
+    }
+  }
