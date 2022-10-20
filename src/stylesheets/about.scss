@@ -1,12 +1,6 @@
 body.about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #B3DEDB;
-  
-    & > div,
-    & > a {
-      margin: 10px 0;
-    }
+  .text {
+    font-family: 'PT Mono';
+    font-size: 1.2em;
   }
+}
