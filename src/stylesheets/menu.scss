@@ -31,16 +31,19 @@
     a {
       text-decoration: none;
       color: black;
-      font-family: 'PT Mono';
+      font-family: 'Gilroy-medium';
       font-size: 1.2em;
     }
   }
   .line_end {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
     color: inherit;
     a {
       text-decoration: none;
       color: black;
-      font-family: 'PT Mono';
+      font-family: 'Gilroy-medium';
       font-size: 1.2em;
     }
   }
