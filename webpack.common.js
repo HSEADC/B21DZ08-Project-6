@@ -122,6 +122,15 @@ module.exports = {
       template: "./src/textures.html",
       filename: "./textures.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/general.html",
+      filename: "./general.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/project.html",
+      filename: "./project.html",
+    }),
+
 
     // Partials
     new HtmlWebpackPartialsPlugin([
