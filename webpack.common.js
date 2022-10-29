@@ -130,6 +130,10 @@ module.exports = {
       template: "./src/project.html",
       filename: "./project.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pink.html",
+      filename: "./pink.html",
+    }),
 
 
     // Partials

@@ -1,6 +1,9 @@
 body.about {
-  .text {
-    font-family: 'PT Mono';
-    font-size: 1.2em;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .genreal{
+  text-align: center;
+  margin: auto;
 }
+  }
