@@ -1,0 +1,267 @@
+body.project {
+    // overflow: hidden;
+    height: 97vh;
+    .nav-promo1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100vw;
+        // align-content: center;
+    }
+    .kvadrat {
+        font-size: 48px;
+        font-family: "Gilroy-medium";
+        margin-top: 21px;
+        margin-left: 28px;
+    }
+    .nav-promo {
+        margin-top: 31px;
+        margin-right: 9px;
+        width: 130px;
+        height: 110px;      
+        font-size: 20px;
+        display: flex;
+        text-decoration: none;
+        color: black;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 999;
+        a {
+            text-decoration: none;
+            font-family: "Gilroy-medium";
+            color: #000;
+        }
+        #hidden {
+            position: relative;
+            display: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+    .nav-promo:hover #hidden {
+        display: block;
+        cursor: pointer;
+
+    }
+
+
+    .cube {
+        height: 100vh;
+        width: 95vw;
+        background-image: url(./images/cubeproj.gif);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        top: 50px;
+        position: absolute;
+        z-index: 10;
+    }
+    .first-block {
+        margin: auto;
+        margin-top: 640px;
+        width: 97vw;
+        padding-left: 22px;
+        padding-top: 33px;
+        padding-right: 50px;
+        height: 190px;
+        font-family: "Gilroy-medium";
+        line-height: 36px;
+        display: flex;
+        justify-content: space-between;
+        background: #FFFFFF;
+        border: 2px solid #000000;
+        border-radius: 4px;
+        .description {
+            font-size: 32px;
+            width: 900px;
+        }
+        .header {
+            font-size: 36px;
+            width: 500px;
+        }
+            
+        
+    }
+    .second-block, .lolik {
+        margin: auto;
+        margin-top: 27px;
+        width: 97vw;
+        padding-left: 22px;
+        padding-top: 33px;
+        padding-right: 50px;
+        height: 190px;
+        font-family: "Gilroy-medium";
+        line-height: 36px;
+        display: flex;
+        justify-content: space-between;
+        background: #FFFFFF;
+        border: 2px solid #000000;
+        border-radius: 4px;
+        .description {
+            font-size: 32px;
+            width: 900px;
+        }
+        .header {
+            font-size: 36px;
+            width: 500px;
+        }    
+    }
+    .third-block {
+        background: black;
+        color: white;
+        margin: auto;
+        margin-top: 27px;
+        width: 97vw;
+        padding-left: 22px;
+        padding-top: 45px;
+        padding-right: 50px;
+        height: 235px;
+        font-family: "Gilroy-medium";
+        line-height: 36px;
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid #000000;
+        border-radius: 4px;
+        .description {
+            font-size: 32px;
+            width: 900px;
+        }
+        .header {
+            font-size: 36px;
+            width: 500px;
+        }    
+    }
+    .fourth {
+        margin: auto;
+        margin-top: 27px;
+        width: 97vw;
+        padding-left: 22px;
+        padding-top: 45px;
+        padding-right: 50px;
+        height: 275px;
+        font-family: "Gilroy-medium";
+        line-height: 36px;
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid #000000;
+        border-radius: 4px;
+        .description {
+            font-size: 32px;
+            width: 900px;
+        }
+        .header {
+            font-size: 36px;
+            width: 500px;
+        }    
+    }
+    .last {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        width: 85vw;
+        justify-content: space-between;
+        font-family: "Gilroy-medium";
+        p {
+            margin-left: 10px;
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+
+        
+
+        form {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            
+            div {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .form-input {
+            background: #FFFFFF;
+            border: 1px solid #000000;
+            border-radius: 24.1309px;
+            font-size: 16px;
+            width: 390.17px;
+            height: 47.85px;
+            padding-left: 21px;
+        }
+        input {
+            outline: none;
+            width: 390.17px;
+            border:none;
+          }
+        #my-form-status {
+            margin: auto;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        #my-form-button {
+            cursor: pointer;
+            background-color: #FFFFFF;
+            border: none;
+            img {
+                position: absolute;
+                margin-top: -13px;
+            }
+            #inverted:hover {
+                opacity: 100;
+            }
+            #inverted {
+                opacity: 0;
+            }
+        }
+        .thanks {
+            font-family: "Gilroy-medium";
+            font-size: 18px;
+            text-align: center;
+            margin: auto;
+            margin-top: 10px;
+        }
+    }
+
+    .flowers {
+        margin: auto;
+        margin-top: 27px;
+        width: 97vw;
+        height: 538px;
+        border: 2px solid #000000;
+        background-image: url(./images/flowers.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    footer {
+        padding-left: 25px;
+        color: #FFFFFF;
+        font-family: "Gilroy-medium";
+        background: black;
+        height: 159px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer {
+        line-height: 22px;
+        font-size: 18px;
+        display: flex;
+        gap: 39px;
+        text-align: start;
+        img {
+            margin-top: 18px;
+        }
+    }
+    .team {
+        margin-top: 20px;
+        text-decoration: underline;
+    }
+    .socials {
+        display: flex;
+        gap: 15px;
+        padding-right: 25px;
+    }
+}
