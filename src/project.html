@@ -1,11 +1,144 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
-    <head>
-      <meta charset="utf-8" />
-      <title>static-site-boilerplate index</title>
-      <analytics></analytics>
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8" />
+    <title>static-site-boilerplate index</title>
+    <analytics></analytics>
+  </head>
+  <body class="project">
+    <div class="nav-promo1">
+        <div class="kvadrat">
+            SHAPE.OF
+        </div>
+        <div class="nav-promo">
+            <a id="visible" href="">о проекте</a>
+            <a id="hidden" href="index.html">промо</a>
+            <a id="hidden" href="general.html">платформа</a>
+        </div>
+    </div>
+    <div class="cube">
+    </div>
+    <div class="first-block">
+        <div class="header">
+            КТО МЫ?
+        </div>
+        <div class="description">
+            медиа, которое расскажет как созадется и применяется 3D графиака
+        </div>
+    </div>
+    <div class="flowers">
 
-    </body>
-</html>
+    </div>
+    <div class="second-block">
+        <div class="header">
+            КТО МЫ?
+        </div>
+        <div class="description">
+            для всех, кто хочет интересоваться трендами 
+            и читать статьи о 3D графике, для людей творческих профессий, которым не хватает навыков  в 3D 
+            для реализации идей
+        </div>
+    </div>
+    <div class="third-block">
+        <div class="header">
+            ПРОБЛЕМА
+        </div>
+        <div class="description">
+            –в интернете очень много нефильтрованных туториалов 
+            <br>
+            –нет чего-то модного про 3D
+            <br>
+            –на старых сайтах очень много сложной информации, которая плохо структурирована
+        </div>
+    </div>
+    <div class="fourth">
+        <div class="header">
+            ЧЕ У НАС ПРИКОЛЬНОГО
+        </div>
+        <div class="description">
+            –авторская библиотека шейпов и текстур 
+            <br>
+            –статьи про влияние 3D на культуру
+            <br>
+            –гайд для начинающих
+            <br>
+            –подборка туториалов
+            <br>
+            –лонгрид про историю 3D
+        </div>
+    </div>
+    <div class="last"> 
+        <img src="./images/mockup.svg">
+        <form id="my-form" action="https://formspree.io/f/xaykdykz" method="POST">
+            <!-- <label>Email:</label> -->
+            <div>
+                <input class="form-input" type="email" name="email" placeholder="example@mail.ru" />
+                <button id="my-form-button">
+                    <img src="./images/Group411.svg">
+                    <img id='inverted' src="./images/Group412.svg">
+                </button>
+            </div>
+            <p class="thanks">оставьтe-mail и узнай о запуске первым!</p>
+            <p id="my-form-status"></p>
+          </form>
+          <!-- Place this script at the end of the body tag -->
+          <script>
+              var form = document.getElementById("my-form");
+              
+              async function handleSubmit(event) {
+                event.preventDefault();
+                var status = document.getElementById("my-form-status");
+                var data = new FormData(event.target);
+                fetch(event.target.action, {
+                  method: form.method,
+                  body: data,
+                  headers: {
+                      'Accept': 'application/json'
+                  }
+                }).then(response => {
+                  if (response.ok) {
+                    status.innerHTML = "Пасиба:) Ждите)";
+                    form.reset()
+                  } else {
+                    response.json().then(data => {
+                      if (Object.hasOwn(data, 'errors')) {
+                        status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                      } else {
+                        status.innerHTML = "Oops! There was a problem submitting your form"
+                      }
+                    })
+                  }
+                }).catch(error => {
+                  status.innerHTML = "Oops! There was a problem submitting your form"
+                });
+              }
+              form.addEventListener("submit", handleSubmit)
+          </script>
+    </div>
+    <footer>
+        <div class="footer">
+            <div>
+                контакты:
+                <br>
+                Мирас 
+                <br>
+                Арина 
+                <br>
+                Полина
+            </div>
+            <div class="team">
+                M1r4s7
+                <br>
+                horruru
+                <br>
+                polirybka
+            </div>
+            <img src="./images/hsel-logo.svg">
+        </div>
+        <div class="socials">
+            <img src="./images/telegram.svg" alt="">
+            <img src="./images/youtube.svg" alt="">
+        </div>
+    </footer>
+  </body>
+  </html>

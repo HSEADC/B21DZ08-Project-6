@@ -32,6 +32,9 @@ body.promo {
             position: relative;
             display: none;
         }
+        a:hover {
+            text-decoration: underline;
+        }
     }
     .nav-promo:hover #hidden {
         display: block;
@@ -74,7 +77,12 @@ body.promo {
         margin-top: 113px;
         display: flex;
         justify-content: center;
-        flex-direction: row;
+        flex-direction: column;
+        
+        div {
+            display: flex;
+            justify-content: center;
+        }
     }
     .form-input {
         background: #FFFFFF;
@@ -89,6 +97,12 @@ body.promo {
         width: 390.17px;
         border:none;
       }
+    #my-form-status {
+        margin: auto;
+        margin-top: 10px;
+        font-family: "Gilroy-medium";
+        font-size: 16px;
+    }
     #my-form-button {
         cursor: pointer;
         background-color: #FFFFFF;

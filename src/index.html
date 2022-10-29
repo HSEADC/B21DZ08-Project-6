@@ -10,9 +10,9 @@
         <div class="kvadrat">
         </div>
         <div class="nav-promo">
-            <a id="visible" href="">промо/</a>
-            <a id="hidden" href="">о проекте/</a>
-            <a id="hidden" href="general.html">платформа/</a>
+            <a id="visible" href="">промо</a>
+            <a id="hidden" href="project.html">о проекте</a>
+            <a id="hidden" href="general.html">платформа</a>
         </div>
     </div>
     <div class="main">
@@ -26,14 +26,16 @@
     </div>
     <form id="my-form" action="https://formspree.io/f/xaykdykz" method="POST">
         <!-- <label>Email:</label> -->
-        <input class="form-input" type="email" name="email" placeholder="example@mail.ru" />
-        <button id="my-form-button">
-            <img src="./images/Group411.svg">
-            <img id='inverted' src="./images/Group412.svg">
-        </button>
+        <div>
+            <input class="form-input" type="email" name="email" placeholder="example@mail.ru" />
+            <button id="my-form-button">
+                <img src="./images/Group411.svg">
+                <img id='inverted' src="./images/Group412.svg">
+            </button>
+        </div>
         <p id="my-form-status"></p>
       </form>
-      <p class="thanks">оставь e-mail и узнай о запуске первым!</p>
+      <p class="thanks">оставьтe-mail и узнай о запуске первым!</p>
       <!-- Place this script at the end of the body tag -->
       <script>
           var form = document.getElementById("my-form");
@@ -50,7 +52,7 @@
               }
             }).then(response => {
               if (response.ok) {
-                status.innerHTML = "Thanks for your submission!";
+                status.innerHTML = "Пасиба:) Ждите)";
                 form.reset()
               } else {
                 response.json().then(data => {
