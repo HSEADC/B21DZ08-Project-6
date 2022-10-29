@@ -1,2 +1,9 @@
 body.journal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .genreal{
+  text-align: center;
+  margin: auto;
+}
 }

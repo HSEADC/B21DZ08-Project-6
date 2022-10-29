@@ -18,7 +18,7 @@ body.project {
         margin-top: 31px;
         margin-right: 9px;
         width: 130px;
-        height: 110px;      
+        height: 110px;
         font-size: 20px;
         display: flex;
         text-decoration: none;
@@ -80,8 +80,8 @@ body.project {
             font-size: 36px;
             width: 500px;
         }
-            
-        
+
+
     }
     .second-block, .lolik {
         margin: auto;
@@ -105,7 +105,7 @@ body.project {
         .header {
             font-size: 36px;
             width: 500px;
-        }    
+        }
     }
     .third-block {
         background: black;
@@ -130,7 +130,7 @@ body.project {
         .header {
             font-size: 36px;
             width: 500px;
-        }    
+        }
     }
     .fourth {
         margin: auto;
@@ -153,7 +153,7 @@ body.project {
         .header {
             font-size: 36px;
             width: 500px;
-        }    
+        }
     }
     .last {
         margin: auto;
@@ -168,13 +168,13 @@ body.project {
             padding-bottom: 10px;
         }
 
-        
+
 
         form {
             display: flex;
             justify-content: center;
             flex-direction: column;
-            
+
             div {
                 display: flex;
                 justify-content: center;
@@ -234,7 +234,7 @@ body.project {
         background-size: cover;
         background-position: center;
     }
-    
+
     footer {
         padding-left: 25px;
         color: #FFFFFF;
@@ -258,6 +258,9 @@ body.project {
     .team {
         margin-top: 20px;
         text-decoration: underline;
+        a {
+          color: white;
+        }
     }
     .socials {
         display: flex;

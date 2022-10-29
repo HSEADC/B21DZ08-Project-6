@@ -1,9 +1,14 @@
+.navbar {
+  position: sticky;
+  top: 0;
+}
 .nav {
   display: flex;
   float: right;
   height: 100vh;
 }
 .bar {
+  position: sticky;
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
@@ -52,7 +57,7 @@
 .line_border {
   background-color: black;
   width: 1px;
-  height: 100vh;
+  height: 110vh;
   display: block;
   margin-right: 20px;
 }
