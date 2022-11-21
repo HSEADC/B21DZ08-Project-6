@@ -1,0 +1,15 @@
+@media only screen and (min-device-width: 0px) and (max-device-width: 1025px) {
+  body.project {
+    background-color: pink;
+    .first-block {
+      .description {
+        font-size: 28px;
+        // width: 900px;
+      }
+      .header {
+        font-size: 32px;
+        // width: 500px;
+      }
+    }
+  }
+}

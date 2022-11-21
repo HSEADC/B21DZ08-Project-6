@@ -3,73 +3,84 @@
   <head>
     <meta charset="utf-8" />
     <title>static-site-boilerplate index</title>
-    <link type="image/x-icon" href="./images/favicon.ico" rel="shortcut icon">
-  <link type="Image/x-icon" href="./images/favicon.ico" rel="icon">
+    <link type="image/x-icon" href="./images/favicon.ico" rel="shortcut icon" />
+    <link type="Image/x-icon" href="./images/favicon.ico" rel="icon" />
     <analytics></analytics>
   </head>
   <body class="promo">
     <div class="nav-promo1">
-        <div class="kvadrat">
-        </div>
-        <div class="nav-promo">
-            <a id="visible" href="">промо</a>
-            <a id="hidden" href="project.html">о проекте</a>
-            <a id="hidden" href="general.html">платформа</a>
-        </div>
+      <div class="kvadrat"></div>
+      <div class="nav-promo">
+        <a id="visible" href="">промо</a>
+        <a id="hidden" href="project.html">о проекте</a>
+        <a id="hidden" href="general.html">платформа</a>
+      </div>
     </div>
+  <div class='align'>
     <div class="main">
-        <div class="logo">
-            <h1>SHAPE.OF</h1>
-            <h3>медиа о 3D графике</h3>
-        </div>
-        <div class="cube">
-            <img src="./images/cube.gif">
-        </div>
+      <div class="logo">
+        <h1>SHAPE.OF</h1>
+        <h3>медиа о 3D графике</h3>
+      </div>
+      <div class="cube">
+        <img src="./images/cube.gif" />
+      </div>
     </div>
     <form id="my-form" action="https://formspree.io/f/xaykdykz" method="POST">
-        <!-- <label>Email:</label> -->
-        <div>
-            <input class="form-input" type="email" name="email" placeholder="example@mail.ru" />
-            <button id="my-form-button">
-                <img src="./images/Group411.svg">
-                <img id='inverted' src="./images/Group412.svg">
-            </button>
-        </div>
-        <p id="my-form-status"></p>
-      </form>
-      <p class="thanks">оставьтe-mail и узнай о запуске первым!</p>
-      <!-- Place this script at the end of the body tag -->
-      <script>
-          var form = document.getElementById("my-form");
+      <!-- <label>Email:</label> -->
+      <div>
+        <input
+          class="form-input"
+          type="email"
+          name="email"
+          placeholder="example@mail.ru"
+        />
+        <button id="my-form-button">
+          <img src="./images/arrow_1.svg" />
+          <img id="inverted" src="./images/arrow_2.svg" />
+        </button>
+      </div>
+      <p id="my-form-status"></p>
+    </form>
+    <p class="thanks">оставьтe-mail и узнай о запуске первым!</p>
+  </div>
+    <!-- Place this script at the end of the body tag -->
+    <script>
+      var form = document.getElementById('my-form')
 
-          async function handleSubmit(event) {
-            event.preventDefault();
-            var status = document.getElementById("my-form-status");
-            var data = new FormData(event.target);
-            fetch(event.target.action, {
-              method: form.method,
-              body: data,
-              headers: {
-                  'Accept': 'application/json'
-              }
-            }).then(response => {
-              if (response.ok) {
-                status.innerHTML = "Пасиба:) Ждите)";
-                form.reset()
-              } else {
-                response.json().then(data => {
-                  if (Object.hasOwn(data, 'errors')) {
-                    status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                  } else {
-                    status.innerHTML = "Oops! There was a problem submitting your form"
-                  }
-                })
-              }
-            }).catch(error => {
-              status.innerHTML = "Oops! There was a problem submitting your form"
-            });
+      async function handleSubmit(event) {
+        event.preventDefault()
+        var status = document.getElementById('my-form-status')
+        var data = new FormData(event.target)
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: 'application/json'
           }
-          form.addEventListener("submit", handleSubmit)
-      </script>
+        })
+          .then((response) => {
+            if (response.ok) {
+              status.innerHTML = 'Пасиба:) Ждите)'
+              form.reset()
+            } else {
+              response.json().then((data) => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data['errors']
+                    .map((error) => error['message'])
+                    .join(', ')
+                } else {
+                  status.innerHTML =
+                    'Oops! There was a problem submitting your form'
+                }
+              })
+            }
+          })
+          .catch((error) => {
+            status.innerHTML = 'Oops! There was a problem submitting your form'
+          })
+      }
+      form.addEventListener('submit', handleSubmit)
+    </script>
   </body>
-  </html>
+</html>
