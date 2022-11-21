@@ -50,19 +50,19 @@ body.project {
   }
 
   .cube {
-    height: 100vh;
+    height: 75vh;
     width: 95vw;
     background-image: url(./images/cubeproj.gif);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 90%;
     background-position: center;
-    top: 50px;
-    position: absolute;
-    z-index: 10;
+    // top: 50px;
+    position: relative;
+    z-index: 999;
   }
   .first-block {
     margin: auto;
-    margin-top: 640px;
+    // margin-top: 40vw;
     // width: 97vw;
     padding-left: 22px;
     padding-top: 33px;
