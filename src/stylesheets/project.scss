@@ -170,7 +170,7 @@ body.project {
     display: flex;
     align-items: center;
     width: 90vw;
-    justify-content: space-between;
+    justify-content: space-around;
     font-family: 'Gilroy-medium';
     p {
       margin-left: 10px;
@@ -181,7 +181,7 @@ body.project {
     form {
       display: flex;
       justify-content: center;
-      flex-direction: column;
+      flex-direction: column-reverse;
 
       div {
         display: flex;
@@ -193,7 +193,7 @@ body.project {
       border: 1px solid #000000;
       border-radius: 24.1309px;
       font-size: 16px;
-      width: 390.17px;
+      width: 500px;
       height: 47.85px;
       padding-left: 21px;
       outline: none;
@@ -229,10 +229,11 @@ body.project {
     .thanks {
       font-family: 'Gilroy-medium';
       font-size: 18px;
-      text-align: center;
       margin: auto;
       margin-top: 10px;
       color: white;
+      text-align: left;
+      margin-left: 10px;
     }
   }
 
@@ -294,6 +295,7 @@ body.project {
     .last {
       .mockup {
         margin-top: 20px;
+        margin-bottom: 20px;
       }
       margin-top: 45px;
       flex-direction: column-reverse;
@@ -471,7 +473,19 @@ body.project {
       }
     }
     footer {
-      height: 115px;
+      padding-left: 14px;
+      height: 100px;
+    }
+    .footer {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .socials {
+      padding-right: 0;
+      gap: 0;
+      img {
+        width: 70%;
+      }
     }
   }
 } 
