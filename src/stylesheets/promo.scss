@@ -150,7 +150,7 @@ body.promo {
   }
 }
 
-@media (min-width:0px) and (max-width:1024px) {
+@media all and (max-width:1024px) {
   body.promo {
     .main {
       .logo {
@@ -182,7 +182,7 @@ body.promo {
   } 
 }
 
-@media (min-width:0px) and (max-width:414px) {
+@media all and (max-width:414px) {
   body.promo {
     .main {
       margin-top: 20px;
