@@ -5,7 +5,7 @@ body.promo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     // align-content: center;
   }
   .kvadrat {
@@ -21,7 +21,7 @@ body.promo {
     font-size: 20px;
     display: flex;
     text-decoration: none;
-    color: white;
+    color: black;
     flex-direction: column;
     gap: 10px;
     a {
@@ -150,8 +150,15 @@ body.promo {
   }
 }
 
-@media all and (max-width:1024px) {
+@media (min-width: 414px) and (max-width: 1024px) {
   body.promo {
+    .nav-promo {
+      margin-top: 55px;
+      padding-right: 30vw;
+      font-size: 48px;
+      width: 260px;
+      white-space: nowrap;
+    }
     .main {
       .logo {
         margin: auto;
@@ -170,49 +177,32 @@ body.promo {
     .main {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
-    }
-    .cube {
-      margin: auto;
-      img {
-        width: 40vw;
-        // width: 461px;
-        // height: 260px;
-      }
-    }
-  } 
-}
-
-@media all and (max-width:414px) {
-  body.promo {
-    .main {
-      margin-top: 20px;
-      .logo {
-        h1 {
-          font-size: 64px;
-        }
-        h3 {
-          font-size: 12px;
-        }
-      }
       .cube {
         margin: auto;
         img {
-          width: 90vw;
-          height: auto;
-          // width: 461px;
-          // height: 260px;
+          width: 761px;
+          height: 460px;
         }
       }
     }
+
     form {
       margin-top: 40px;
     }
     .form-input {
-      width: 90vw;
+      width: 70vw;
+      height: 3.5vh;
+    }
+    input::placeholder {
+      vertical-align: center;
+      font-size: 25px;
     }
     .thanks {
       padding-left: 7px;
       padding-right: 7px;
+    }
+    .thanks {
+      font-size: 30px;
     }
   }
 }
