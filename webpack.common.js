@@ -139,6 +139,10 @@ module.exports = {
       template: './src/pink.html',
       filename: './pink.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/style_guide.html',
+      filename: './style_guide.html'
+    }),
 
     // Partials
     new HtmlWebpackPartialsPlugin([

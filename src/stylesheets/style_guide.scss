@@ -1,0 +1,232 @@
+body.guide {
+  background-color: #101010;
+  font-family: 'Gilroy-Regular';
+  color: white;
+  .screen {
+    display: flex;
+  }
+  .sidermenu_guide {
+    width: 20%;
+    height: 80vh;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .menu_guide {
+    position: fixed;
+    margin-left: 40px;
+    margin-top: 15%;
+    font-size: 20px;
+    line-height: 0.4;
+    font-weight: 500;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .element_guide {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    }
+    .element_guide:hover {
+      color: #9780c8;
+      transition: 0.3s;
+    }
+  }
+  .content_container {
+    width: 80%;
+
+    .first_slide {
+      height: 55vh;
+      margin-top: 20%;
+      .logo_first_slide {
+        width: 75%;
+      }
+    }
+    .title {
+      margin-top: 20px;
+      font-size: 40px;
+    }
+    .heading {
+      background-color: #9780c8;
+      width: auto;
+      height: 94px;
+      padding: 1.2em;
+      margin-top: 5%;
+      .heading_text {
+        font-family: 'Gilroy-Semibold';
+        display: inline-block;
+        font-size: 53px;
+        font-weight: 600;
+      }
+    }
+    .text_info {
+      font-size: 40px;
+      font-weight: 500;
+      margin-top: 3%;
+      margin-bottom: 4%;
+    }
+    .text_block {
+      margin-top: 4%;
+    }
+    .header_dummy {
+      font-size: 43px;
+      font-weight: 600;
+      margin-bottom: 1%;
+      margin-top: 3%;
+    }
+    .space_text_body {
+      margin-top: 3%;
+    }
+    .text_body {
+      line-height: 125%;
+      font-size: 24px;
+    }
+    .system_image {
+      margin-top: 2%;
+      width: 90%;
+    }
+    .bottom {
+      margin-bottom: 4%;
+    }
+    .border_style {
+      position: relative;
+      display: block;
+      margin-top: 2%;
+      margin-bottom: 4%;
+    }
+    .border {
+      width: 20%;
+      padding: 1em;
+    }
+    .logo_logotype {
+      margin-top: 2%;
+      margin-bottom: 5%;
+    }
+    .logo_size_1 {
+      margin-top: 2%;
+      width: 40%;
+    }
+    .logo_size_2 {
+      margin-top: 2%;
+      width: 30%;
+    }
+    .logo_size_3 {
+      margin-top: 2%;
+      margin-bottom: 5%;
+      width: 15%;
+    }
+    .column {
+      margin-left: 5%;
+      display: flex;
+      flex-direction: column;
+    }
+    .logo_wrong {
+      width: 40%;
+    }
+    .wrong_uses {
+      display: flex;
+      margin-top: 2%;
+    }
+    .wrong_logo_size {
+      width: 90%;
+    }
+    .text_wrong_info {
+      font-size: 20px;
+    }
+    .logo_type {
+      width: 45%;
+      margin-top: 2%;
+      margin-bottom: 3%;
+    }
+    .var_colors {
+      display: flex;
+      gap: 2%;
+      margin-top: 2%;
+    }
+    .var_color {
+      width: 19.75em;
+      height: 10.5em;
+      margin-bottom: 3%;
+      margin-top: 4%;
+      padding: 4em;
+      padding-left: 2.5em;
+    }
+    #var_color_1 {
+      background-color: #f4f4f4;
+    }
+    #var_color_2 {
+      border: 1px solid #f4f4f4;
+    }
+    #var_color_3 {
+      background-color: #9780c8;
+    }
+    .color_bar {
+      width: 90%;
+      margin-bottom: 2%;
+      margin-top: 4%;
+    }
+    .grid_img {
+      margin-bottom: 3%;
+      margin-top: 4%;
+    }
+    .headers {
+      width: 45%;
+      margin-top: 6%;
+    }
+    .gilroy {
+      font-size: 40px;
+      margin-bottom: 2%;
+      margin-top: 4%;
+    }
+    .fonts_gilroy {
+      font-family: 'Gilroy-Regular';
+      font-size: 24px;
+      display: flex;
+      gap: 10%;
+    }
+    .semibold {
+      font-family: 'Gilroy-Semibold';
+    }
+    .helvetica {
+      font-size: 40px;
+      margin-bottom: 2%;
+      margin-top: 4%;
+      font-family: 'Helvetica-regular';
+    }
+    .regular {
+      font-family: 'Helvetica-regular';
+      font-size: 24px;
+    }
+    .bottom2 {
+      margin-bottom: 1%;
+    }
+    .hashtags {
+    }
+    .character {
+      font-family: 'Gilroy-Regular';
+      font-size: 36px;
+      border: 1px solid #f4f4f4;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    .line {
+      display: flex;
+      gap: 3%;
+      margin-top: 1%;
+    }
+  }
+  .heading_text {
+    
+  }
+}

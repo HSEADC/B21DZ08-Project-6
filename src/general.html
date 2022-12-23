@@ -8,7 +8,7 @@
   </head>
   <body class="index">
     <!-- <div id='preloader'>
-    
+
     </div>
 
     <script>
@@ -18,34 +18,41 @@
      </script> -->
     <div class="menu">
       <div class="logo">
-        <span>RE</span><a href="general.html">SHAPE</a>
+        <img src="./images/relogo.svg">
       </div>
       <div class="nav">
-      <a href="history.html">история</a>
-      <a href="start.html">как?что?где?</a>
-      <a href="journal.html">журанл</a>
-      <a href="models.html">модели</a>
-      <a href="textures.html">текстуры</a>
+        <a href="history.html">история</a>
+        <a href="start.html">как?что?где?</a>
+        <a href="journal.html">журанл</a>
+        <a href="models.html">модели</a>
+        <a href="textures.html">текстуры</a>
       </div>
     </div>
 
-
-    <div class='container'>
-      <div class='img background-img'></div>
-      <div class='img foreground-img'></div>
-      <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider">
-      <div class='slider-button'></div>
+    <div class="container">
+      <div class="img background-img"></div>
+      <div class="img foreground-img"></div>
+      <input
+        type="range"
+        min="1"
+        max="100"
+        value="50"
+        class="slider"
+        name="slider"
+        id="slider"
+      />
+      <div class="slider-button"></div>
     </div>
   </body>
   <script>
-    $("#slider").on("input change", (e)=>{
-    const sliderPos = e.target.value;
-    $('.foreground-img').css('height', `${sliderPos}%`)
-    $('.slider-button').css('top', `calc(${sliderPos}% - 7px)`)
-    });
+    $('#slider').on('input change', (e) => {
+      const sliderPos = e.target.value
+      $('.foreground-img').css('height', `${sliderPos}%`)
+      $('.slider-button').css('top', `calc(${sliderPos}% - 7px)`)
+    })
 
     // window.onload = function(){
     //   $('.background-img').css('background-image', 'url(' + images/models-black.gif + ')');
-    // };    
+    // };
   </script>
 </html>
