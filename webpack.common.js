@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 const webpack = require('webpack')
 const path = require('path')
@@ -13,8 +14,8 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'docs'),
-    clean: true
+    path: path.resolve(__dirname, 'docs')
+    // clean: true
   },
   module: {
     rules: [
@@ -75,6 +76,10 @@ module.exports = {
       chunkFilename: '[id].css'
     }),
 
+    new CopyPlugin({
+      patterns: [{ from: 'src/share', to: 'share' }]
+    }),
+
     // Landing page
     new HtmlWebpackPlugin({
       hash: true,
@@ -95,46 +100,45 @@ module.exports = {
 
     //Article
     new HtmlWebpackPlugin({
-      template: "./src/history.html",
-      filename: "./history.html",
+      template: './src/history.html',
+      filename: './history.html'
     }),
     new HtmlWebpackPlugin({
-      template: "./src/journal.html",
-      filename: "./journal.html",
+      template: './src/journal.html',
+      filename: './journal.html'
     }),
     new HtmlWebpackPlugin({
-      template: "./src/about.html",
-      filename: "./about.html",
+      template: './src/about.html',
+      filename: './about.html'
     }),
     new HtmlWebpackPlugin({
-      template: "./src/start.html",
-      filename: "./start.html",
+      template: './src/start.html',
+      filename: './start.html'
     }),
     new HtmlWebpackPlugin({
-      template: "./src/tutorials.html",
-      filename: "./tutorials.html",
+      template: './src/tutorials.html',
+      filename: './tutorials.html'
     }),
     new HtmlWebpackPlugin({
-      template: "./src/models.html",
-      filename: "./models.html",
+      template: './src/models.html',
+      filename: './models.html'
     }),
     new HtmlWebpackPlugin({
-      template: "./src/textures.html",
-      filename: "./textures.html",
+      template: './src/textures.html',
+      filename: './textures.html'
     }),
     new HtmlWebpackPlugin({
-      template: "./src/general.html",
-      filename: "./general.html",
+      template: './src/general.html',
+      filename: './general.html'
     }),
     new HtmlWebpackPlugin({
-      template: "./src/project.html",
-      filename: "./project.html",
+      template: './src/project.html',
+      filename: './project.html'
     }),
     new HtmlWebpackPlugin({
-      template: "./src/pink.html",
-      filename: "./pink.html",
+      template: './src/pink.html',
+      filename: './pink.html'
     }),
-
 
     // Partials
     new HtmlWebpackPartialsPlugin([
