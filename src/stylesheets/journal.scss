@@ -1,9 +1,102 @@
 body.journal {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  .genreal{
-  text-align: center;
-  margin: auto;
-}
+  font-family: 'Gilroy-Regular';
+  background-color: #101010;
+  .header {
+    width: 100vw;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 69px;
+    padding-right: 69px;
+    margin: auto;
+    row-gap: 62px;
+    column-gap: 69px;
+    max-width: max-content;
+  }
+
+  .card {
+    img {
+      align-self: center;
+    }
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    color: #101010;
+    width: 388px;
+    height: 531px;
+    background-color: #F4F4F4;
+    .header-sec {
+      margin-top: 26px;
+      margin-bottom: 25px;
+      padding-left: 23px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 120%;
+      max-height: 20px;
+    }
+    .description {
+      padding-left: 23px;
+      font-size: 16px;
+      line-height: 125%;
+      color: #101010;
+      opacity: 0.6;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+
+  footer {
+    color: #F4F4F4;
+    font-size: 20px;
+    img {
+      width: 156px;
+      height: 56px;
+    }
+    padding-top: 56px;
+    padding-left: 53px;
+    padding-right: 53px;
+    margin-top: 114px;
+    background-color: #9780C8;
+    width: 100vw;
+    height: 232px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .column {
+    gap: 10px;
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column-sec {
+    gap: 10px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .authors {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bold {
+    font-family: 'Gilroy-Semibold';
+  }
+
+  .footer-logos {
+    display: flex;
+    gap: 30px;
+  }
+  .inst {
+    width: 91px;
+  }
+
 }
