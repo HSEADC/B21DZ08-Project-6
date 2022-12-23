@@ -143,6 +143,10 @@ module.exports = {
       template: './src/style_guide.html',
       filename: './style_guide.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/journals/lettering.html',
+      filename: './journals/lettering.html'
+    }),
 
     // Partials
     new HtmlWebpackPartialsPlugin([
