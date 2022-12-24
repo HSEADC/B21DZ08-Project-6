@@ -1,0 +1,209 @@
+body.mod1 {
+    background-color: black;
+    height: 97vh;
+    .nav-promo1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      // align-content: center;
+    }
+    .kvadrat {
+      background-color: #fff;
+      width: 1px;
+      height: 1px;
+    }
+    .nav-promo {
+      margin-top: 31px;
+      margin-right: 9px;
+      width: 105px;
+      height: 110px;
+      font-size: 20px;
+      display: flex;
+      text-decoration: none;
+      color: black;
+      flex-direction: column;
+      gap: 10px;
+      a {
+        text-decoration: none;
+        font-family: 'Gilroy-medium';
+        color: white;
+      }
+      #hidden {
+        position: relative;
+        display: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+    .nav-promo:hover #hidden {
+      display: block;
+      cursor: pointer;
+    }
+    .align {
+      margin-top: 10vh;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .main {
+      // width: 60vw;
+      // width: 49vw;
+      margin: auto;
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: 430px 1fr;
+      grid-template-rows: 1fr;
+      color: white;
+  
+      .logo {
+        margin: auto;
+        // left: 100px;
+        // margin: auto;
+        h1 {
+          font-family: 'Gilroy-medium';
+          font-size: 128px;
+        }
+        h3 {
+          font-size: 24px;
+          float: right;
+        }
+      }
+      // .cube {
+      //   height: 100vh;
+      //   width: 95vw;
+      //   background-image: url(./images/cubeproj.gif);
+      //   background-repeat: no-repeat;
+      //   background-size: contain;
+      //   background-position: center;
+      //   top: 50px;
+      //   position: absolute;
+      //   z-index: 10;
+      // }
+      .cube {
+        // position: relative;
+        // left: -25vw;
+        // grid-area: 1 1 2 2 ;
+        img {
+          width: 461px;
+          height: 260px;
+        }
+      }
+    }
+    form {
+      margin-top: 70px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+  
+      div {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .form-input {
+      background: #ffffff;
+      border: 1px solid #000000;
+      border-radius: 24.1309px;
+      font-size: 16px;
+      width: 390.17px;
+      height: 47.85px;
+      padding-left: 21px;
+    }
+    input {
+      outline: none;
+      width: 390.17px;
+      border: none;
+    }
+    #my-form-status {
+      margin: auto;
+      margin-top: 10px;
+      font-family: 'Gilroy-medium';
+      font-size: 16px;
+    }
+    #my-form-button {
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      img {
+        position: absolute;
+        margin-top: -13px;
+        z-index: 99;
+        margin-left: -45px;
+      }
+      #inverted:hover {
+        opacity: 100;
+      }
+      #inverted {
+        opacity: 0;
+      }
+    }
+    .thanks {
+      font-family: 'Gilroy-medium';
+      font-size: 18px;
+      text-align: center;
+      margin: auto;
+      margin-top: 10px;
+      color: white;
+    }
+  }
+  
+  @media (min-width: 414px) and (max-width: 1024px) {
+    body.promo {
+      .nav-promo {
+        margin-top: 55px;
+        padding-right: 30vw;
+        font-size: 48px;
+        width: 260px;
+        white-space: nowrap;
+      }
+      .main {
+        .logo {
+          margin: auto;
+          // left: 100px;
+          // margin: auto;
+          h1 {
+            font-family: 'Gilroy-medium';
+            font-size: 14vw;
+          }
+          h3 {
+            font-size: 3vw;
+            float: right;
+          }
+        }
+      }
+      .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        .cube {
+          margin: auto;
+          img {
+            width: 761px;
+            height: 460px;
+          }
+        }
+      }
+  
+      form {
+        margin-top: 40px;
+      }
+      .form-input {
+        width: 70vw;
+        height: 3.5vh;
+      }
+      input::placeholder {
+        vertical-align: center;
+        font-size: 25px;
+      }
+      .thanks {
+        padding-left: 7px;
+        padding-right: 7px;
+      }
+      .thanks {
+        font-size: 30px;
+      }
+    }
+  }
+  

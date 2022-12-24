@@ -1,9 +1,166 @@
 body.start {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  .genreal{
-  text-align: center;
-  margin: auto;
+  background-color: #9780C8;
+  font-family: 'Gilroy-Regular';
+
+  .grid {
+    justify-items: center;
+    margin: auto;
+    margin-top: 71px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: grid;
+    max-width: max-content;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+  }
+
+  .card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #101010;
+    width: 310px;
+    height: 178px;
+    padding-top: 14px;
+    padding-left: 19px;
+    padding-bottom: 14px;
+    padding-right: 19px;
+  }
+  .text {
+    font-family: 'Gilroy-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 101.5%;
+    color: #f4f4f4;
+  }
+
+  .line {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card:hover {
+    background-color: #493F5D;
+  }
+
+  
+
+  footer {
+    color: #f4f4f4;
+    font-size: 20px;
+    img {
+      width: 156px;
+      height: 56px;
+    }
+    padding-top: 56px;
+    padding-left: 53px;
+    padding-right: 53px;
+    margin-top: 114px;
+    background-color: #9780C8;
+    width: 100vw;
+    height: 232px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .column {
+    gap: 10px;
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column-sec {
+    gap: 10px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .authors {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bold {
+    font-family: 'Gilroy-Semibold';
+  }
+
+  .footer-logos {
+    display: flex;
+    gap: 30px;
+  }
+  .inst {
+    width: 91px;
+  }
+
+
+
+  #info {
+    .scrollable-element {
+      scrollbar-color: red yellow;
+    }
+    overflow: scroll;
+    position: absolute;
+    top: 130px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: none;
+    padding-left: 94px;
+    padding-top: 85px;
+    padding-right: 20px;
+    padding-top: 17px;
+    color: #f4f4f4;
+    background-color: #101010;
+    width: 900px;
+    height: auto;
+    margin: auto;
+    font-family: 'Gilroy-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+
+    header {
+      margin-top: 35px;
+      margin-bottom: 35px;
+      font-family: 'Gilroy-Regular';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 106.99%;
+    }
+  }
+  .close {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #overflow {
+    cursor: pointer;
+    display: none;
+    background-color: #000000;
+    opacity: 0.5;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  p {
+    margin-top: 35px;
+    max-width: 550px;
+    margin-bottom: 35px;
+  }
+
 }
-}
+

@@ -1,9 +1,10 @@
 .menu {
+  z-index: 999;
   width: 100vw;
   height: 110px;
   padding-left: 41px;
   padding-right: 41px;
-  background-color: #141414;
+  background-color: #101010;
   color: #f1f1f1;
   display: flex;
   justify-content: space-between;
@@ -38,6 +39,9 @@
       font-weight: 500;
       font-style: normal;
       font-size: 21px;
+    }
+    .underline {
+      text-decoration-line: underline;
     }
   }
 

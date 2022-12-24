@@ -139,6 +139,18 @@ module.exports = {
       template: './src/pink.html',
       filename: './pink.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/style_guide.html',
+      filename: './style_guide.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/journals/lettering.html',
+      filename: './journals/lettering.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/textures/foole.html',
+      filename: './textures/foole.html'
+    }),
 
     // Partials
     new HtmlWebpackPartialsPlugin([
