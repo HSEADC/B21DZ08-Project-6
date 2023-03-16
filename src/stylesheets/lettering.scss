@@ -187,4 +187,55 @@ body.lettering{
   padding-left: 69px;
 }
 
+footer {
+  color: #F4F4F4;
+  font-size: 20px;
+  img {
+    width: 156px;
+    height: 56px;
+  }
+  padding-top: 56px;
+  padding-left: 53px;
+  padding-right: 53px;
+  margin-top: 114px;
+  background-color: #9780C8;
+  width: 100vw;
+  height: 232px;
+  display: flex;
+  justify-content: space-between;
+}
+.column {
+  gap: 10px;
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column-sec {
+  gap: 10px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+}
+
+.authors {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bold {
+  font-family: 'Gilroy-Semibold';
+}
+
+.footer-logos {
+  display: flex;
+  gap: 30px;
+}
+.inst {
+  width: 91px;
+}
+
+
+
 }

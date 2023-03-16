@@ -147,6 +147,10 @@ module.exports = {
       template: './src/journals/lettering.html',
       filename: './journals/lettering.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/textures/foole.html',
+      filename: './textures/foole.html'
+    }),
 
     // Partials
     new HtmlWebpackPartialsPlugin([

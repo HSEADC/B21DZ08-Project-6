@@ -1,0 +1,73 @@
+body.fole-texture {
+  font-family: 'Gilroy-Regular';
+  background-color: #9780C8;
+  color: #f4f4f4;
+
+.arrow {
+  margin-top: 24px;
+  margin-bottom: 9px;
+  padding-left: 31px;
+}
+.image-fole {
+  padding-left: 31px;
+  padding-right: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 41px;
+}
+.image-fole img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.info {
+  max-width: 1000px;
+  margin-top: 41px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.large-text {
+  font-size: 36px;
+  line-height: 95%;
+}
+.text {
+  margin-top: 16px;
+  font-size: 22px;
+  line-height: 125%;
+}
+.description {
+  max-width: 685px;
+  display: flex;
+  flex-direction: column;
+}
+.button {
+  cursor: pointer;
+  border: 1px solid #f4f4f4;
+  border-radius: 7px;
+  max-width: fit-content;
+  font-size: 32px;
+  line-height: 103%;
+  padding-left: 38px;
+  padding-top: 12px;
+  padding-right: 38px;
+  padding-bottom: 12px;
+  margin-top: 32px;
+}
+
+.button:hover {
+  background-color: #CBBFE3;
+}
+
+.cc {
+  font-size: 15px;
+  line-height: 125%;
+  padding-left: 31px;
+  margin-top: 94px;
+  max-width: 222px;
+}
+}
