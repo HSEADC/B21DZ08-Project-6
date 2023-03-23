@@ -1,100 +1,118 @@
+// @font-face {
+//   font-family: 'PT Root UI';
+//   src: url('fonts/PT-Root-UI_Light.woff2') format('woff2'),
+//     url('fonts/PT-Root-UI_Light.woff') format('woff');
+//   font-weight: 100;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'PT Root UI';
+//   src: url('fonts/PT-Root-UI_Regular.woff2') format('woff2'),
+//     url('fonts/PT-Root-UI_Regular.woff') format('woff');
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'PT Root UI';
+//   src: url('fonts/PT-Root-UI_Medium.woff2') format('woff2'),
+//     url('fonts/PT-Root-UI_Medium.woff') format('woff');
+//   font-weight: 500;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'PT Root UI';
+//   src: url('fonts/PT-Root-UI_Bold.woff2') format('woff2'),
+//     url('fonts/PT-Root-UI_Bold.woff') format('woff');
+//   font-weight: 700;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'IMB Plex Mono';
+//   src: url('fonts/IBMPlexMono-Regular.woff') format('woff'),
+//     url('fonts/IBMPlexMono-Regular.woff') format('woff');
+//   font-weight: 400;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'PT Mono';
+//   src: url('fonts/PTM55FT.ttf') format('ttf'),
+//     url('fonts/PTM55FT.ttf') format('ttf');
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Gilroy-Regular';
+//   src: url('fonts/Gilroy-Regular.ttf') format('ttf'),
+//     url('fonts/Gilroy-Regular.woff') format('woff'),
+//     url('fonts/Gilroy-Regular.ttf') format('ttf');
+//   font-weight: 400;
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Gilroy-Semibold';
+//   src: url('fonts/Gilroy-Semibold.ttf') format('ttf'),
+//     url('fonts/Gilroy-Semibold.woff') format('woff'),
+//     url('fonts/Gilroy-Semibold.ttf') format('ttf');
+//   font-weight: 600;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Gilroy-medium';
+//   src: url('fonts/Gilroy-Medium.ttf') format('ttf'),
+//     url('fonts/Gilroy-Medium.ttf') format('ttf'),
+//     url('fonts/Gilroy-Medium.woff') format('woff');
+//   font-weight: 500;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Helvetica-italic';
+//   src: url('fonts/Helvetica-LightOblique.woff2') format('woff2'),
+//     url('fonts/Helvetica-LightOblique.woff') format('woff');
+//   font-weight: 300;
+//   font-style: italic;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'Helvetica-regular';
+//   src: url('fonts/helvetica_regular.otf') format('otf'),
+//     url('fonts/Helvetica.woff') format('woff');
+//   font-weight: 400;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'Helvetica-bold';
+//   src: url('fonts/Helvetica-Bold.woff2') format('woff2'),
+//     url('fonts/Helvetica-Bold.woff') format('woff');
+//   font-weight: bold;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
 @font-face {
-  font-family: 'PT Root UI';
-  src: url('fonts/PT-Root-UI_Light.woff2') format('woff2'),
-    url('fonts/PT-Root-UI_Light.woff') format('woff');
-  font-weight: 100;
+  font-family: 'Atyp Text-Thin';
+  src: url('fonts/AtypText-Light.ttf') format('ttf'),
+    url('fonts/AtypText-Light.ttf') format('ttf');
+  font-weight: light;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'PT Root UI';
-  src: url('fonts/PT-Root-UI_Regular.woff2') format('woff2'),
-    url('fonts/PT-Root-UI_Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PT Root UI';
-  src: url('fonts/PT-Root-UI_Medium.woff2') format('woff2'),
-    url('fonts/PT-Root-UI_Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PT Root UI';
-  src: url('fonts/PT-Root-UI_Bold.woff2') format('woff2'),
-    url('fonts/PT-Root-UI_Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'IMB Plex Mono';
-  src: url('fonts/IBMPlexMono-Regular.woff') format('woff'),
-    url('fonts/IBMPlexMono-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'PT Mono';
-  src: url('fonts/PTM55FT.ttf') format('ttf'),
-    url('fonts/PTM55FT.ttf') format('ttf');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gilroy-Regular';
-  src: url('fonts/Gilroy-Regular.ttf') format('ttf'),
-    url('fonts/Gilroy-Regular.woff') format('woff'),
-    url('fonts/Gilroy-Regular.ttf') format('ttf');
-  font-weight: 400;
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gilroy-Semibold';
-  src: url('fonts/Gilroy-Semibold.ttf') format('ttf'),
-    url('fonts/Gilroy-Semibold.woff') format('woff'),
-    url('fonts/Gilroy-Semibold.ttf') format('ttf');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gilroy-medium';
-  src: url('fonts/Gilroy-Medium.ttf') format('ttf'),
-    url('fonts/Gilroy-Medium.ttf') format('ttf'),
-    url('fonts/Gilroy-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Helvetica-italic';
-  src: url('fonts/Helvetica-LightOblique.woff2') format('woff2'),
-    url('fonts/Helvetica-LightOblique.woff') format('woff');
-  font-weight: 300;
+  font-family: 'Atyp Text-SemiboldItalic';
+  src: url('fonts/AtypText-SemiboldItalic.ttf') format('ttf'),
+    url('fonts/AtypText-SemiboldItalic.ttf') format('ttf');
+  font-weight: Semibold;
   font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Helvetica-regular';
-  src: url('fonts/helvetica_regular.otf') format('otf'),
-    url('fonts/Helvetica.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Helvetica-bold';
-  src: url('fonts/Helvetica-Bold.woff2') format('woff2'),
-    url('fonts/Helvetica-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
   font-display: swap;
 }

@@ -1,18 +1,18 @@
 body.history {
-  font-family: 'Gilroy-Regular';
+  font-family: 'Atyp Text-Thin';
   background-color: #101010;
   color: #f4f4f4;
 
 
-  .background {
-    padding-right: 58px;
-    display: flex;
-    justify-content: space-between;
-    background-image: url(images/history-background.svg);
-    background-size: cover;
-    width: 100vw;
-    height: 465px;
-  }
+  // .background {
+  //   padding-right: 58px;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   background-image: url(images/history-background.svg);
+  //   background-size: cover;
+  //   width: 100vw;
+  //   height: 465px;
+  // }
   
   .big-image {
     width: 430px;
@@ -25,15 +25,18 @@ body.history {
   }
   .large-text {
     max-width: 820px;;
-    font-family: 'Gilroy-Semibold';
+    font-family: 'Atyp Text-Thin';
     font-size: 80px;
     line-height: 125%;
+    padding-left: 41px;
+    top: 20px;
   }
 
   .small-text {
-    margin-top: 130px;
+    margin-top: 13px;
     font-size: 14px;
     line-height: 16px;
+    padding-left: 41px;
   }
   .con {
     margin-top: 186px;
