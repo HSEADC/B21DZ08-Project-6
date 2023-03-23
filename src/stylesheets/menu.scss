@@ -1,4 +1,4 @@
-.menu {
+.A_menu {
   z-index: 999;
   width: 100vw;
   height: 110px;
@@ -10,13 +10,14 @@
   justify-content: space-between;
   align-items: center;
 
-  .logo span {
+  
+  .Q_logo span {
     font-family: 'Helvetica-light';
     font-style: oblique;
     font-weight: 300;
     font-size: 48px;
   }
-  .logo {
+  .Q_logo {
     display: flex;
     gap: 5px;
     font-family: 'Helvetica-bold';
@@ -29,20 +30,20 @@
       color: #f1f1f1;
     }
   }
-  .nav {
+  .Q_nav {
     display: flex;
     gap: 99px;
     a {
       color: #f1f1f1;
       text-decoration: none;
-      font-family: 'Gilroy-medium';
-      font-weight: 500;
+      font-family: 'Atyp Text-Thin';
+      font-weight: 0;
       font-style: normal;
-      font-size: 21px;
+      font-size: 20px;
     }
-    .underline {
-      text-decoration-line: underline;
-    }
+   .underline{
+    
+   }
   }
 
 }
