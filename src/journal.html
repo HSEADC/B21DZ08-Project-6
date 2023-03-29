@@ -8,111 +8,242 @@
     <analytics></analytics>
   </head>
   <body class="journal">
-    
-    <div class="A_menu">
-      <a href="general.html">
-        <div class="Q_logo">
-          <img src="./images/relogo.svg">
+    <menu class="O_header">
+      <a href="index.html">
+        <div class="logo">
+          <img src="images/logo.svg">
         </div>
       </a>
-      <div class="Q_nav">
-        <a href="history.html">история</a>
-        <a class="underline" href="journal.html">журнал</a>
-        <a href="start.html">туторилы</a>
-        <a href="models.html">модели</a>
-        <a href="textures.html">текстуры</a>
+      <div class="nav">
+        <div class="navigation">
+          <a href="">история</a>
+          <a href="">журанл</a>
+          <a href="">туториалы</a>
+          <a href="">модели</a>
+          <a href="">текстуры</a>
+        </div>
+        <div class="line"></div>
       </div>
+    </menu>
+    <div class="about">
+      В журнале reshape вы сможете почитать много интересных статей про тренды в использовании 3D в разных сферах 
     </div>
-    <img class="header" src="./images/purple-journal.svg">
-    <div class="grid">
-      <a href="journals/lettering.html">
-        <div class="card">
-          <img class="image" src="./images/lettering.svg">
-          <div class="header-sec">
-            леттеринг в 3D
+    <div class="cards">
+      <a href="">
+        <div class="card1">
+          <img src="images/iskusstvo.svg">
+          <img class="arrow" src="images/arrow.svg">
+          <div class="header">
+            Как 3D помогало искусству во время пандемии? 
           </div>
-          <div class="description">
-            Необычная, сказочная и одновременно реалистичная объемная типографика представляет собой...
+          <div class="text">
+            Виртуальная галерея – это интерактивное трёхмерное пространство, где можно увидеть различные...
           </div>
         </div>
       </a>
+      <a class="end" href="">
+        <div class="card1 end">
+          <div class="header">
+            Digital Fashion
+          </div>
+          <div class="text">
+            Digital fashion стал популярным благодаря усиленному вниманию к... 
+          </div>
+          <img class="arrow" src="images/arrow.svg">
+          <img src="images/fashion.svg">
+        </div>
+      </a>
+      <a href="">
+        <div class="card1">
+          <img src="images/memes.svg">
+          <img class="arrow" src="images/arrow.svg">
+          <div class="header">
+            3D мемы
+          </div>
+          <div class="text">
+            Мем-эволюция не стоит на месте: за десять лет интернет прошёл путь от демотиваторов и рейдж-комиксов к...
+          </div>
+        </div>
+      </div>
+      </a>
+    <div class="swipe">
+      <img src="images/swipe.svg">
+    </div>
 
-      <a href="">
-        <div class="card">
-          <img class="image" src="./images/digital-fashion.svg">
-          <div class="header-sec">
-            Digital fashion
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Все статьи</button>
+      <button class="btn" onclick="filterSelection('design')"> Дизайн</button>
+      <button class="btn" onclick="filterSelection('tech')"> Технологии</button>
+    </div>
+    
+    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+    <div class="container">
+      <a class="journalCard filterDiv design" href="">
+        <div class="">
+          <div class="header">
+            Леттеринг в 3D
           </div>
-          <div class="description">
-            Digital fashion стал популярным благодаря усиленному вниманию к ...           </div>
+          <div class="text">
+            Необычная, сказочная и одновременно реалистичная объемная типографика редставляет собой...
+          </div>
+          <div class="time">
+            40 минут назад
+          </div>
+          <div class="image">
+            <img src="images/lettering.svg">
+          </div>
+          <img class="arrow" src="images/arrow.svg">
         </div>
       </a>
-      
-      <a href="">
-        <div class="card">
-          <img class="image" src="./images/albums-cover.svg">
-          <div class="header-sec">
-            Использование 3D графики в обложках музыкальных альбомов 
+      <a class="journalCard filterDiv design" href="">
+        <div>
+          <div class="header">
+            3D в интерфейсах
           </div>
-          <div class="description">
-            Дизайнерская графика появилась на обложках пластинок, когда молодой арт-директор убедил Columbia Record...          </div>
+          <div class="text">
+            3D-дизайн погружает в продукт с помощью визуальных образов, привлекает внимание и хорошо запоминается...
+          </div>
+          <div class="time">
+            40 минут назад
+          </div>
+          <div class="image">
+            <img src="images/interface.svg">
+          </div>
+          <img class="arrow" src="images/arrow.svg">
         </div>
       </a>
-      <a href="">
-        <div class="card">
-          <img class="image" src="./images/pandemia.svg">
-          <div class="header-sec">
-            как 3D помогало искусству во время пандемии? 
+      <a class="journalCard filterDiv design" href="">
+        <div>
+          <div class="header">
+            Использование 3D графики 
+  в обложках музыкальных 
+  альбомов  
           </div>
-          <div class="description">
-            Виртуальная галерея – это интерактивное трёхмерное пространство, где можно увидеть различные...          </div>
+          <div class="text">
+            Дизайнерская графика появилась 
+  на обложках пластинок, когда 
+  молодой арт-директор убедил 
+  Columbia Record...      </div>
+          <div class="time">
+            40 минут назад
+          </div>
+          <div class="image">
+            <img src="images/clip.svg">
+          </div>
+          <img class="arrow" src="images/arrow.svg">
         </div>
       </a>
-      <a href="">
-        <div class="card">
-          <img class="image" src="./images/memes.svg">
-          <div class="header-sec">
-            3D МЕМЫ
-          </div>
-          <div class="description">
-            Мем-эволюция не стоит на месте: за десять лет интернет прошёл путь от демотиваторов и рейдж-комиксов к эдвайсам...          </div>
-        </div>
-      </a>
-      <a href="">
-        <div class="card">
-          <img class="image" src="./images/motion.svg">
-          <div class="header-sec">
+      <a class="journalCard filterDiv tech" href="">
+        <div>
+          <div class="header">
             3D в моушн-дизайне 
           </div>
-          <div class="description">
-            Несмотря на то, что трёхмерный ролик создан на компьютере, — всё равно есть вера в то, что он реальный...          </div>
+          <div class="text">
+            Несмотря на то, что трёхмерный 
+  ролик создан на компьютере, — всё 
+  равно есть вера в то, что он 
+  реальный...       </div>
+          <div class="time">
+            40 минут назад
+          </div>
+          <div class="image">
+            <img src="images/motion.svg">
+          </div>
+          <img class="arrow" src="images/arrow.svg">
+        </div>
+      </a>
+      <a class="journalCard filterDiv design" href="">
+        <div>
+          <div class="header">
+            Стоит ли идти в 3D-дизайн 
+  в 2022 году?  
+          </div>
+          <div class="text">
+            Огромным преимуществом 
+  работы в сфере 3d 
+  моделирования и визуализации 
+  является возможность...   </div>
+          <div class="time">
+            40 минут назад
+          </div>
+          <div class="image">
+            <img src="images/stoit.svg">
+          </div>
+          <img class="arrow" src="images/arrow.svg">
+        </div>
+      </a>
+      <a class="journalCard filterDiv tech" href="">
+        <div>
+          <div class="header">
+            Digital fashion
+          </div>
+          <div class="text">
+            Digital fashion стал популярным 
+  благодаря усиленному вниманию к...    </div>
+          <div class="time">
+            40 минут назад
+          </div>
+          <div class="image">
+            <img src="images/digitalfashion.svg">
+          </div>
+          <img class="arrow" src="images/arrow.svg">
+        </div>
+      </a>
+      <a class="journalCard filterDiv design" href="">
+        <div>
+          <div class="header">
+            Как 3D помогало искусству 
+  во время пандемии? 
+          </div>
+          <div class="text">
+            Виртуальная галерея – это 
+  интерактивное трёхмерное 
+  пространство, где можно 
+  увидеть различные...    </div>
+          <div class="time">
+            40 минут назад
+          </div>
+          <div class="image">
+            <img src="images/iskusstvo.svg">
+          </div>
+          <img class="arrow" src="images/arrow.svg">
         </div>
       </a>
     </div>
-
     <footer>
-      <img src="./images/foot-logo.svg">
-
-      <div class="column">
-        <a>reshape@gmail.ru</a>
-        <a>Россия, Москва, ул. Скучная 55, 2023</a>
-      </div>
-      <div class="authors">
-        <div class="column-sec">
-          <a class="bold">Авторы:</a>
-          <a>M1r4s7, horruru, polirybka</a>
+      <div class="footer">
+        <div class="links linksFlex">
+          <a class="header" href="">ссылки</a>
+          <a href="">история</a>
+          <a href="">журнал</a>
+          <a href="">туториалы</a>
+          <a href="">модели</a>
+          <a href="">текстуры</a>
         </div>
-
-        <div class="column-sec">
-          <a class="bold">Под кураторством:</a>
-          <a>Захар День, Соня Каем</a>
+        <div class="links linksFlex">
+          <a class="header" href="">подписаться</a>
+          <a href="">телеграм</a>
+          <a href="">инстаграм</a>
         </div>
-      </div>
-      <div class="footer-logos">
-        <img src="./images/hse-logo.svg">
-        <img class="inst" src="./images/inst-logo.svg">
+        <div class="links linksFlex">
+          <a class="header" href="">контакты</a>
+          <a href="">reshape@gmail.ru</a>
+          <a href="">Россия, Москва, ул. Скучная 55, 2023</a>
+        </div>
+        <div class="links linksFlex">
+          <a class="header" href="">рассылка</a>
+          <div class="form_group">
+            <div>
+              <input class="form_input" placeholder=" ">
+              <label class="form_label">введите адрес электронной почты</label>
+            </div>
+            <div class="ok">
+              OK
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
-
+    <script src="javascript/js.js"></script>
   </body>
 </html>

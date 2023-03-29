@@ -136,6 +136,10 @@ module.exports = {
       filename: './project.html'
     }),
     new HtmlWebpackPlugin({
+      template: './src/promo.html',
+      filename: './promo.html'
+    }),
+    new HtmlWebpackPlugin({
       template: './src/pink.html',
       filename: './pink.html'
     }),

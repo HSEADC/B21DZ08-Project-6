@@ -63,14 +63,14 @@
 //   font-style: normal;
 // }
 
-// @font-face {
-//   font-family: 'Gilroy-medium';
-//   src: url('fonts/Gilroy-Medium.ttf') format('ttf'),
-//     url('fonts/Gilroy-Medium.ttf') format('ttf'),
-//     url('fonts/Gilroy-Medium.woff') format('woff');
-//   font-weight: 500;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'Gilroy-medium';
+  src: url('fonts/Gilroy-Medium.ttf') format('ttf'),
+    url('fonts/Gilroy-Medium.ttf') format('ttf'),
+    url('fonts/Gilroy-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
 
 // @font-face {
 //   font-family: 'Helvetica-italic';
@@ -100,19 +100,52 @@
 // }
 
 @font-face {
-  font-family: 'Atyp Text-Thin';
-  src: url('fonts/AtypText-Light.ttf') format('ttf'),
-    url('fonts/AtypText-Light.ttf') format('ttf');
+  font-family: 'AtypDisplay-Italic';
+  src: url('fonts/AtypDisplay-Italic.ttf') format('ttf'),
+    url('fonts/AtypDisplay-Italic.woff2') format('woff2'),
+    url('fonts/AtypDisplay-Italic.woff') format('woff');
   font-weight: light;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Atyp Text-SemiboldItalic';
-  src: url('fonts/AtypText-SemiboldItalic.ttf') format('ttf'),
-    url('fonts/AtypText-SemiboldItalic.ttf') format('ttf');
-  font-weight: Semibold;
-  font-style: italic;
+  font-family: 'AtypDisplay-LightItalic';
+  src: url('fonts/AtypDisplay-LightItalic.ttf') format('ttf'),
+    url('fonts/AtypDisplay-LightItalic.woff2') format('woff2'),
+    url('fonts/AtypDisplay-LightItalic.woff') format('woff');
+  font-weight: light;
+  font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'AtypDisplay-Regular';
+  src: url('fonts/AtypDisplay-Regular.ttf') format('ttf'),
+    url('fonts/AtypDisplay-Regular.woff2') format('woff2'),
+    url('fonts/AtypDisplay-Regular.woff') format('woff');
+  font-weight: light;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AtypDisplay-Light';
+  src: url('fonts/AtypDisplay-Light.ttf') format('ttf'),
+    url('fonts/AtypDisplay-Light.woff2') format('woff2'),
+    url('fonts/AtypDisplay-Light.woff') format('woff');
+  font-weight: light;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AtypDisplay-Semibold';
+  src: url('fonts/AtypDisplay-Semibold.ttf') format('ttf'),
+    url('fonts/AtypDisplay-Semibold.woff2') format('woff2'),
+    url('fonts/AtypDisplay-Semibold.woff') format('woff');
+  font-weight: light;
+  font-style: normal;
+  font-display: swap;
+}
+
