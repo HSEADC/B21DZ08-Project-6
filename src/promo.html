@@ -35,80 +35,151 @@
 
     <analytics></analytics>
   </head>
-  <body class="mod1">
-    <div class="nav-promo1">
-      <div class="kvadrat"></div>
-      <div class="nav-promo">
-        <a id="visible" href="">промо</a>
-        <a id="hidden" href="project.html">о проекте</a>
-        <a id="hidden" href="general.html">платформа</a>
-      </div>
+  <body class="promo">
+    <div class="background">
+      <a href=""><img class="logo" src="./images/relogo.svg"/></a>
+      <div class="site-button"><a href="general.html">перейти на сайт</a></div>
     </div>
-    <div class="align">
-      <div class="main">
-        <div class="logo">
-          <h1>SHAPE.OF</h1>
-          <h3>медиа о 3D графике</h3>
-        </div>
-        <div class="cube">
-          <img src="./images/cube.gif" />
-        </div>
-      </div>
-      <form id="my-form" action="https://formspree.io/f/xaykdykz" method="POST">
-        <!-- <label>Email:</label> -->
-        <div>
-          <input
-            class="form-input"
-            type="email"
-            name="email"
-            placeholder="example@mail.ru"
-          />
-          <button id="my-form-button">
-            <img src="./images/arrow_1.svg" />
-            <img id="inverted" src="./images/arrow_2.svg" />
-          </button>
-        </div>
-        <p id="m-form-status"></p>
-      </form>
-      <p class="thanks">оставь почту и узнай о запуске первым!</p>
-    </div>
-    <!-- Place this script at the end of the body tag -->
-    <script>
-      var form = document.getElementById('my-form')
 
-      async function handleSubmit(event) {
-        event.preventDefault()
-        var status = document.getElementById('my-form-status')
-        var data = new FormData(event.target)
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-            Accept: 'application/json'
-          }
-        })
-          .then((response) => {
-            if (response.ok) {
-              status.innerHTML = 'Пасиба:) Ждите)'
-              form.reset()
-            } else {
-              response.json().then((data) => {
-                if (Object.hasOwn(data, 'errors')) {
-                  status.innerHTML = data['errors']
-                    .map((error) => error['message'])
-                    .join(', ')
-                } else {
-                  status.innerHTML =
-                    'Oops! There was a problem submitting your form'
-                }
-              })
-            }
-          })
-          .catch((error) => {
-            status.innerHTML = 'Oops! There was a problem submitting your form'
-          })
-      }
-      form.addEventListener('submit', handleSubmit)
-    </script>
+    <div class="about-media">
+      <img class="logo" src="./images/relogo.svg"/>
+      <div class="line"></div>
+      <div class="text">медиа, которое расскажет как создаётся и применяется 3д графика</div>
+    </div>
+
+    <div class="large-text">
+      мы хотим помочь диайнерам начать реализовывать работы в 3д 
+    </div>
+
+    <div class="fichi">
+      <div class="header">
+        наши <span>фичи</span>
+      </div>
+      <div class="avtorskaya">
+        <div class="text">
+          Авторская библиотека моделей и текстур
+        </div>
+        <div class="share">
+          <div class="text-cr">наша команда хотела бы поделиться некоторыми работами, которые мы делали для себя и никуда не выкладывали</div>
+          <div class="site-button"><a href="models.html">узнать больше</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <img src="./images/card1.svg"/>
+      <img src="./images/card2.svg"/>
+      <img src="./images/card3.svg"/>
+    </div>
+
+    <div class="purple">
+      <div class="purple-header">
+        <div class="text">
+          Журнал о трендах        
+        </div>
+        <div class="share">
+          <div class="text-cr">
+            для всех, кто хочет интересоваться трендами, читать статьи о 3д графике и искать вдохновение
+          </div>
+          <div class="site-button"><a href="journal.html">перейти</a></div>
+        </div>
+      </div>
+      <div class="image">
+        <!-- <img src="./images/purple-image.svg"/> -->
+      </div>
+      <div class="motion">
+        <div class="text-motion">
+          3D в моушен дизайне 
+        </div>
+        <div class="text-cr">
+          в статье рассказывается как анимированная 3d графика используется в вебе
+        </div>
+      </div>
+    </div>
+
+    <div class="avtorskaya marg">
+      <div class="text">
+        Идеи применения
+      </div>
+      <div class="share">
+        <div class="text-cr">
+          в этом разделе собраны маленькие подсказки о работе в cinema 4d. Возможно именно они вдохновят на создание новых графических образов. Иногда можно начинать не с идеи, а с различных методов её реализации
+        </div>
+        <div class="site-button"><a href="start.html">читать</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tutorial-cards">
+      <div>
+        <img src="./images/cards.svg">
+        <img src="./images/cards-1.svg">
+        <img src="./images/cards-2.svg">
+        <img src="./images/cards-3.svg">
+      </div>
+      <div>
+        <img src="./images/cards-4.svg">
+        <img src="./images/cards-5.svg">
+        <img src="./images/cards-6.svg">
+        <img src="./images/cards-7.svg">
+      </div>
+    </div>
+
+    <div class="header tech">
+      личность<span> бренда</span>
+    </div>
+
+    <div class="large-text pad">
+      мы молодые, технологичные, креативные и яркие
+    </div>
+    <div class="avtorskaya">
+      <div class="header aud">
+        наша<span> аудитория</span>
+      </div>
+      <div class="share">
+        <div class="text-cr">
+          для всех, кто хочет интересоваться трендами, читать статьи о 3д графике и искать вдохновение
+        </div>
+      </div>
+    </div>
+
+    <div class="people">
+      <img src="./images/aud.svg">
+      <img src="./images/aud1.svg">
+      <img src="./images/aud2.svg">
+    </div>
+
+    <div class="marquee-container">
+      <p class="marquee">
+        c reshape жизнь становится лучше
+      </p>
+  </div>
+
+    <footer>
+      <img src="./images/foot-logo.svg">
+
+      <div class="column">
+        <a>reshape@gmail.ru</a>
+        <a>Россия, Москва, ул. Скучная 55, 2023</a>
+      </div>
+      <div class="authors">
+        <div class="column-sec">
+          <a class="bold">Авторы:</a>
+          <a>M1r4s7, horruru, polirybka</a>
+        </div>
+
+        <div class="column-sec">
+          <a class="bold">Под кураторством:</a>
+          <a>Захар День, Соня Каем</a>
+        </div>
+      </div>
+      <div class="footer-logos">
+        <img src="./images/hse-logo.svg">
+        <img class="inst" src="./images/inst-logo.svg">
+      </div>
+    </footer>
+
+    
+
   </body>
 </html>
