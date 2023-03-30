@@ -1,73 +1,217 @@
-body.fole-texture {
-  font-family: 'Gilroy-Regular';
-  background-color: #9780C8;
+body.fole {
+  font-family: 'AtypDisplay-Light';
+  background-color: #101010;
   color: #f4f4f4;
+  .header {
+    width: fit-content;
+    margin-top: 100px;
+    font-family: 'AtypDisplay-Semibold';
+    font-size: 40px;
+  }
+  .text {
+    max-width: 40vw;
+    width: fit-content;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  .chara {
+    margin-top: 136px;
+    display: flex;
+    flex-direction: column;
+    .header1 {
+      font-family: 'AtypDisplay-Semibold';
+      font-size: 24px;
+    }
+    .info {
+      margin-top: 30px;
+      display: flex;
+      gap: 100px;
+    }
+    .left {
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
 
-.arrow {
-  margin-top: 24px;
-  margin-bottom: 9px;
-  padding-left: 31px;
-}
-.image-fole {
-  padding-left: 31px;
-  padding-right: 31px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  margin-bottom: 41px;
-}
-.image-fole img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%
-}
+    }
+  }
+  .toto {
+    padding-top: 100px;
+    width: 90vw;
+    margin: auto;
+    padding-left: 55px;
+    padding-right: 55px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .download:hover {
+    background-color: #3C87B1;
+    border: none;
+  }
+  .download {
+    cursor: pointer;
+    width: 156px;
+    height: 44px;
+    left: 987px;
+    top: 717.05px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.info {
-  max-width: 1000px;
-  margin-top: 41px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
+    border: 2px solid #FFFFFF;
+    margin: auto;
+    font-size: 32px;
+  }
+  .backarrow {
+    margin-top: 120px;
+    padding-left: 55px;
+  } 
+  footer {
+    .hselogo {
+      width: 50%;
+      margin-top: 30px;
+    }
+    
+    
+    background-color: #3C87B1;
+    width: 100%;
+    height: 385px;
+    margin-top: 160px;
 
-.large-text {
-  font-size: 36px;
-  line-height: 95%;
-}
-.text {
-  margin-top: 16px;
-  font-size: 22px;
-  line-height: 125%;
-}
-.description {
-  max-width: 685px;
-  display: flex;
-  flex-direction: column;
-}
-.button {
-  cursor: pointer;
-  border: 1px solid #f4f4f4;
-  border-radius: 7px;
-  max-width: fit-content;
-  font-size: 32px;
-  line-height: 103%;
-  padding-left: 38px;
-  padding-top: 12px;
-  padding-right: 38px;
-  padding-bottom: 12px;
-  margin-top: 32px;
-}
+    .footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1.5fr;
+      justify-content: space-between;
+      padding-left: 55px;
+      padding-right: 55px;
+      font-family: 'AtypDisplay-Light';
+      .header {
+        font-family: 'AtypDisplay-Regular';
+        font-size: 20px;
+        margin-bottom: 40px;
+      }
+      a {
+        text-decoration: none;
+        color: #F4F4F4;
+        font-size: 15px;
+      }
+      .linksFlex {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+      }
+      .rass {
+        padding-left: 30px;
+      }
 
-.button:hover {
-  background-color: #CBBFE3;
-}
+      .links {
+      }
 
-.cc {
-  font-size: 15px;
-  line-height: 125%;
-  padding-left: 31px;
-  margin-top: 94px;
-  max-width: 222px;
+      .form_group {
+        display: flex;
+        position: relative;
+        .form_label {
+          position: absolute;
+          top: 10px;
+          left: 0px;
+          z-index: 1;
+          transition: 0.3s;
+          color: #F4F4F4;
+      }
+        .form_input {
+          color: #F4F4F4;
+          font-size: 20px;
+            width: 22vw;
+            padding: 0 0 10px 0;
+            border: none;
+            border-bottom: 1px solid #F4F4F4;
+            background-color: transparent;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .ok {
+          font-family: 'AtypDisplay-Bold';
+          position: inherit;
+          left: -30px;
+          top: 10px;
+        }
+
+      }
+      .form_input:focus ~ .form_label,
+      .form_input:not(:placeholder-shown) ~ .form_label {
+      top: -18px;
+      font-size: 12px;
+      color: #e0e0e0;
 }
+      
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    
+    nav {
+      display: block !important;
+    }
+    .O_header {
+      display: none;
+    }
+    
+    }
+    @media screen and (max-width: 900px) {
+      
+        footer {
+          height: 550px;
+          .footer {
+            grid-template-columns: 1fr 1fr 1fr;
+            .rass {
+              padding-left: 0;
+              margin-top: 0px;
+              grid-column-start: 1;
+              grid-column-end: 3;
+            }
+            .form_group {
+              .form_input {
+                width: 310px;
+              }
+            }
+          }
+        }
+      }
+  
+      @media screen and (max-width: 414px) {
+        
+          .nav-container .checkbox {
+            right: 35px;
+          }
+          .nav-container .hamburger-lines {
+            right: 35px;
+          }
+          .logo {
+            left: 20px;
+  
+          }
+    
+          footer {
+            height: 670px;
+            padding-top: 60px;
+            .footer {
+              grid-template-columns: 1fr 1fr;
+              row-gap: 30px;
+              padding-left: 20px;
+              padding-right: 20px;
+              .header {
+                margin-bottom: 10px;
+              }
+            }
+          }
+  
+          .navbar .menu-items {
+            padding-left: 20vw;
+        }
+  
+  
+      }
+}
+.hselogo {
+  max-width: 200px;
 }
