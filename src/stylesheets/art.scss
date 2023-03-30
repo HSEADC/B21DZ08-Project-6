@@ -265,34 +265,95 @@ body.art{
           }
       
           @media screen and (max-width: 414px) {
-            
-              .nav-container .checkbox {
-                right: 35px;
-              }
-              .nav-container .hamburger-lines {
-                right: 35px;
-              }
-              .logo {
-                left: 20px;
-      
-              }
+            .back .backarrow {
+                padding-left: 20px;
+                width: 220px;
+            }
+            .text {
+                padding-right: 20px;
+                margin-left: 20px;
+                font-size: 22px;
+                width: auto;
+            }
+            img {
+                max-width: 380px;
+            }
+            .ps {
+                margin-left: 20px;
+                padding-right: 20px;
+                font-size: 14px;
+            }
+            .image {
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-left: 0px;
+            }
+            .header6 {
+                font-size: 32px;
+                font-size: 50px;
+                margin-left: 20px;
+            }
+            .lolik {
+                height: auto;
+                row-gap: 20px;
+                grid-template-columns: 1fr;
+                margin-top: 50px;
+                column-gap: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .header2 {
+                margin-left: 20px;
+                font-size: 32px;
+                padding-right: 20px;
+            }
+            .lolik1 {
+                height: auto;
+                row-gap: 20px;
+                grid-template-columns: 1fr;
+                margin-top: 50px;
+                column-gap: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .base {
+                .base1 {
+                    font-size: 64px;
+                }
+            }
+            .top {
+                margin-top: 80px;
+            }
+            .backj {
+                margin-left: 20px;
+            }
+            .nav-container .checkbox {
+            right: 35px;
+            }
+            .nav-container .hamburger-lines {
+              right: 35px;
+            }
+             .logo {
+               left: 20px;
+    
+          }
               
-              footer {
-                height: 670px;
-                padding-top: 60px;
-                .footer {
-                  grid-template-columns: 1fr 1fr;
-                  row-gap: 30px;
-                  padding-left: 20px;
-                  padding-right: 20px;
-                  .header {
-                    margin-bottom: 10px;
-                  }
+             footer {
+              height: 670px;
+              padding-top: 60px;
+              .footer {
+                grid-template-columns: 1fr 1fr;
+                row-gap: 30px;
+               padding-left: 20px;
+                padding-right: 20px;
+                .header {
+                  margin-bottom: 10px;
                 }
               }
+            }
       
-              .navbar .menu-items {
-                padding-left: 20vw;
+            .navbar .menu-items {
+              padding-left: 20vw;
             }
       
       }
