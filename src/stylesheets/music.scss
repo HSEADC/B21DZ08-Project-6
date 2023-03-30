@@ -220,7 +220,12 @@ body.music{
           }
       
           @media screen and (max-width: 414px) {
+            .back .backarrow {
+                padding-left: 20px;
+                width: 220px;
+            }
             .header6 {
+                font-size: 50px;
                 margin-left: 20px;
             }
             .text {
