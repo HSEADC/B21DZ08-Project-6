@@ -148,8 +148,12 @@ module.exports = {
       filename: './style_guide.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/journals/lettering.html',
-      filename: './journals/lettering.html'
+      template: './src/journals/art.html',
+      filename: './journals/art.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/journals/music.html',
+      filename: './journals/music.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/textures/foole.html',

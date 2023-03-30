@@ -5,120 +5,243 @@
     <title></title>
     <link type="image/x-icon" href="./images/favicon.ico" rel="shortcut icon">
     <link type="Image/x-icon" href="./images/favicon.ico" rel="icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <analytics></analytics>
   </head>
   <body class="models">
-    <div class="A_menu">
-      <a href="general.html">
-        <div class="Q_logo">
-          <img src="./images/relogo.svg">
+    <nav>
+      <div class="navbar">
+        <div class="kuku nav-container">
+            <input class="checkbox" type="checkbox" name="" id="ttt">
+            <div class="hamburger-lines">
+              <span class="opa raz"></span>
+              <span class="opa dva"></span>
+              <span class="opa tri"></span>
+            </div>  
+            <a href="index.html"> 
+              <div class="logo">
+                  <img src="images/logo.svg">
+                </div>
+            </a>
+          <div class="menu-items">
+            <div class="borderline">
+
+            </div>
+            <div>
+              <li><a href="history.html">история</a></li>
+              <li><a href="journal.html">журнал</a></li>
+              <li><a href="start.html">туториалы</a></li>
+              <li><a class="selected" href="models.html">модели</a></li>
+              <li><a href="textures.html">текстуры</a></li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <menu class="O_header">
+      <a href="index.html">
+        <div class="logo22">
+          <img src="images/logo.svg">
         </div>
       </a>
-      <div class="Q_nav">
-        <a href="history.html">история</a>
-        <a  href="journal.html">журнал</a>
-        <a href="start.html">туторилы</a>
-        <a class="underline" href="models.html">модели</a>
-        <a href="textures.html">текстуры</a>
+      <div class="nav">
+        <div class="navigation">
+          <a href="history.html">история</a>
+          <a href="journal.html">журнал</a>
+          <a href="start.html">туториалы</a>
+          <a class="selected" href="models.html">модели</a>
+          <a href="textures.html">текстуры</a>
+        </div>
+        <div class="line"></div>
       </div>
+    </menu>
+    <div class="about">
+      Наша команда хотела бы поделиться некоторыми работами, которые мы делали для себя и никуда не выкладывали
     </div>
 
-    <div class="grid">
-      <div class="card" style="cursor: pointer;" onclick="window.location='';">
-        <img class="image-texture" src="./images/cvetok.svg">
-        <a class="header">
-          цветок
-        </a>
-        <a class="text">
-          реалистичная текстура слегка помятой фольги
-        </a>
-      </div>
-
-      <div class="card" style="cursor: pointer;" onclick="window.location='';">
-        <img class="image-texture" src="./images/gloves.svg">
-        <a class="header">перчатки</a>
-        <a class="text">
-          sci-fi перчатки c риггингом
-        </a>
-      </div>
-
-      <div class="card" style="cursor: pointer;" onclick="window.location='';">
-        <img class="image-texture" src="./images/pink-forms.svg">
-        <a class="header">cute коряжки</a>
-        <a class="text">
-          абстрактные формы с текстурой
-        </a>
-      </div>
-
-      <div class="card" style="cursor: pointer;" onclick="window.location='';">
-        <img class="image-texture" src="./images/cube.svg">
-        <a class="header">
-          ртутный комок
-        </a>
-        <a class="text">
-          абстрактная форма с текстурой металла 
-        </a>
-      </div>
-
-      <div class="card" style="cursor: pointer;" onclick="window.location='';">
-        <img class="image-texture" src="./images/metaball.svg">
-        <a class="header">
-          метабол-монстр
-        </a>
-        <a class="text">
-          милый новогодний злодей с анимированным телом
-        </a>
-      </div>
-
-      <div class="card" style="cursor: pointer;" onclick="window.location='';">
-        <img class="image-texture" src="./images/cube1.svg">
-        <a class="header">куб</a>
-        <a class="text">
-          твердый куб становится жидким
-        </a>
-      </div>
-
-      <div class="card" style="cursor: pointer;" onclick="window.location='';">
-        <img class="image-texture" src="./images/flower.svg">
-        <a class="header">лотос</a>
-        <a class="text">
-          модель с анимацией распускающегося цветка
-        </a>
-      </div>
-
-      <div class="card" style="cursor: pointer;" onclick="window.location='';">
-        <img class="image-texture" src="./images/romb.svg">
-        <a class="header">кристалл</a>
-        <a class="text">
-          модель с анимированной текстурой
-        </a>
-      </div>
-
-  </div>
-
-  <footer>
-    <img src="./images/foot-logo.svg">
-
-    <div class="column">
-      <a>reshape@gmail.ru</a>
-      <a>Россия, Москва, ул. Скучная 55, 2023</a>
+    <div class="container">
+      <a class="journalCard filterDiv modelling" href="">
+        <div class="flex">
+          <div class="header">
+            Ртутный комок
+          </div>
+          <div class="text">
+            Абстрактная форма с текстурой металла           
+          </div>
+          <div class="image">
+            <img src="images/rtut.svg">
+          </div>
+          <div class="bottom">
+            <div class="time">
+             
+            </div>
+            <img class="arrow" src="images/arrow1.svg">
+          </div>
+        </div>
+      </a>
+      <a class="journalCard filterDiv design" href="">
+        <div class="flex">
+          <div class="header">
+            Метабол-монстр  
+          </div>        
+          <div class="text">
+            Милый новогодний злодей с анимированным телом 
+          </div>         
+          <div class="image">
+            <img src="images/metaball.png">
+          </div>
+          <div class="bottom">
+            <div class="time">
+             
+            </div>
+            <img class="arrow" src="images/arrow1.svg">
+          </div>
+        </div>
+      </a>
+      <a class="journalCard filterDiv blender" href="">
+        <div class="flex">
+          <div class="header">
+            Полосатое облако      
+          </div>
+          <div class="text">
+            Модель облака из мира снов
+          </div>
+          <div class="image">
+            <img src="images/oblako.svg">
+          </div>
+          <div class="bottom">
+            <div class="time">
+             
+            </div>
+            <img class="arrow" src="images/arrow1.svg">
+          </div>
+        </div>
+      </a>
+      <a class="journalCard filterDiv modelling" href="">
+        <div class="flex">
+          <div class="header">
+           Розовый лотос
+          </div>
+          <div class="text">
+            Модель с анимацией распускающегося цветка
+          </div>
+          <div class="image">
+            <img src="images/lotos.svg">
+          </div>
+          <div class="bottom">
+            <div class="time">
+             
+            </div>
+            <img class="arrow" src="images/arrow1.svg">
+          </div>
+        </div>
+      </a>
+      <a class="journalCard filterDiv texture" href="">
+        <div class="flex">
+          <div class="header">
+            Sci-fi перчатки
+          </div>
+          <div class="text">
+            Sci-fi перчатки c риггингом
+          </div>
+          <div class="image">
+            <img src="images/gloves.svg">
+          </div>
+          <div class="bottom">
+            <div class="time">
+            
+            </div>
+            <img class="arrow" src="images/arrow1.svg">
+          </div>
+        </div>
+      </a>
+      <a class="journalCard filterDiv blender" href="">
+        <div class="flex">
+          <div class="header">
+            Железный куб
+          </div>
+          <div class="text">
+            Твердый куб становится жидким          
+          </div>
+          <div class="image">
+            <img src="images/cube.svg">
+          </div>
+          <div class="bottom">
+            <div class="time">
+             
+            </div>
+            <img class="arrow" src="images/arrow1.svg">
+          </div>
+        </div>
+      </a>
+      <a class="journalCard filterDiv design" href="">
+        <div class="flex">
+          <div class="header">
+            Анимация текстуры         
+          </div>
+          <div class="text">
+            Модель с анимированной текстурой          
+          </div>
+          <div class="image">
+            <img src="images/texture.svg">
+          </div>
+          <div class="bottom">
+            <div class="time">
+             
+            </div>
+            <img class="arrow" src="images/arrow1.svg">
+          </div>
+        </div>
+      </a>
     </div>
-    <div class="authors">
-      <div class="column-sec">
-        <a class="bold">Авторы:</a>
-        <a>M1r4s7, horruru, polirybka</a>
-      </div>
 
-      <div class="column-sec">
-        <a class="bold">Под кураторством:</a>
-        <a>Захар День, Соня Каем</a>
+    <footer>
+      <div class="footer">
+        <div class="links linksFlex">
+          <a class="header" href="">ссылки</a>
+          <a href="">история</a>
+          <a href="">журнал</a>
+          <a href="">туториалы</a>
+          <a href="">модели</a>
+          <a href="">текстуры</a>
+        </div>
+        <div class="links linksFlex">
+          <a class="header" href="">подписаться</a>
+          <a href="">телеграм</a>
+          <a href="">инстаграм</a>
+        </div>
+        <div class="links linksFlex">
+          <a class="header" href="">контакты</a>
+          <a href="">reshape@gmail.ru</a>
+          <a href="">Россия, Москва, ул. Скучная 55, 2023</a>
+          <img class="hselogo" src="images/hselogo.svg">
+        </div>
+        <div class="links rass linksFlex">
+          <a class="header" href="">рассылка</a>
+          <div class="form_group">
+            <div>
+              <input class="form_input" placeholder=" ">
+              <label class="form_label">введите адрес электронной почты</label>
+            </div>
+            <div class="ok">
+              OK
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="footer-logos">
-      <img src="./images/hse-logo.svg">
-      <img class="inst" src="./images/inst-logo.svg">
-    </div>
-  </footer>
+    </footer>
+    <script src="javascript/js.js"></script>
+    <script>
+      $("#ttt").click(function() {
+      const bodyOverflow = $("body").css("overflow");
+ 
+      if (bodyOverflow === "hidden") {
+         $("body]]]").css("overflow", "visible");
+      } else {
+         $("body").css("overflow", "hidden");
+      }
+     });
+     </script>
 
   </body>
 </html>
