@@ -160,6 +160,11 @@ module.exports = {
       filename: './textures/foole.html'
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/models/mercury.html',
+      filename: './models/mercury.html'
+    }),
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
