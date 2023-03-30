@@ -1,11 +1,15 @@
+// body.journal.hide-overflow {
+//   overflow: hidden;
+// }
 body.journal {
+  // overflow: auto; 
   font-family: 'AtypDisplay-Regular';
   color: #F4F4F4;
   background-color: #101010;
 
 
   .about {
-    margin-top: 10px;
+    margin-top: 130px;
     margin-left: 55px;
     width: 404px;
     font-size: 20px;
@@ -162,8 +166,8 @@ body.journal {
     border: none;
     outline: none;
     font-family: 'AtypDisplay-Light';
-    padding: 12px 16px;
-    color: #F4F4F4;
+    padding: 7px 16px;
+    color: #9A9A9A;
     font-size: 32px;
     background-color: #101010;
     cursor: pointer;
@@ -171,15 +175,21 @@ body.journal {
   
   /* Add a light grey background on mouse-over */
   .btn:hover {
-    background: linear-gradient(180deg, #3C87B1 0%, rgba(60, 135, 177, 0) 100%);
-  }
+    color: #F4F4F4;
+    background: #3C87B1;
+    }
   
   /* Add a dark background to the active button */
   .btn.active {
-    background: linear-gradient(180deg, #3C87B1 0%, rgba(60, 135, 177, 0) 100%);
+    color: #F4F4F4;
+    background: #3C87B1;
   }
   
   footer {
+    .hselogo {
+      width: 50%;
+      margin-top: 30px;
+    }
     padding-top: 115px;
     background-color: #3C87B1;
     width: 100%;
@@ -187,7 +197,8 @@ body.journal {
     margin-top: 110px;
 
     .footer {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1.5fr;
       justify-content: space-between;
       padding-left: 55px;
       padding-right: 55px;
@@ -207,6 +218,9 @@ body.journal {
         flex-direction: column;
         gap: 9px;
       }
+      .rass {
+        padding-left: 30px;
+      }
 
       .links {
       }
@@ -216,7 +230,7 @@ body.journal {
         position: relative;
         .form_label {
           position: absolute;
-          top: 0px;
+          top: 10px;
           left: 0px;
           z-index: 1;
           transition: 0.3s;
@@ -238,6 +252,7 @@ body.journal {
           font-family: 'AtypDisplay-Bold';
           position: inherit;
           left: -30px;
+          top: 10px;
         }
 
       }
@@ -251,7 +266,120 @@ body.journal {
     }
   }
 
+
+
+  @media screen and (max-width: 1100px) {
+  nav {
+    display: block !important;
+  }
+  .O_header {
+    display: none;
+  }
+  .cards {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+
+  .container {
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+  }
+  @media screen and (max-width: 900px) {
+    .container {
+      grid-template-columns: 1fr 1fr ;
+      }
+      .btn {
+        font-size: 20px;
+      }
+      .container {
+        .journalCard {
+          
+        }
+      }
+      footer {
+        height: 550px;
+        .footer {
+          grid-template-columns: 1fr 1fr 1fr;
+          .rass {
+            padding-left: 0;
+            margin-top: 30px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+          }
+          .form_group {
+            .form_input {
+              width: 310px;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 414px) {
+      .about {
+        margin-left: 20px;
+        width: auto;
+      }
+      .container {
+        grid-template-columns: 1fr;
+        margin-top: 60px;
+        }
+        .cards {
+          padding-left: 20px;
+          padding-right: 20px;
+          flex-direction: column;
+        }
+        #myBtnContainer {
+          gap: 10px;
+          margin-top: 70px;
+          padding-left: 20px;
+        }
+        .btn {
+          padding: 6px 10px;
+          font-size: 14px;
+          align-items: start;
+        }
+        .container {
+          padding-left: 20px;
+          padding-right: 20px;
+          .journalCard {
+            
+          }
+        }
+        .nav-container .checkbox {
+          right: 35px;
+        }
+        .nav-container .hamburger-lines {
+          right: 35px;
+        }
+        .logo {
+          left: 20px;
+
+        }
+        .cards {
+          .end {
+            align-self: flex-start;
+          }
+        }
+        footer {
+          height: 670px;
+          padding-top: 60px;
+          .footer {
+            grid-template-columns: 1fr 1fr;
+            row-gap: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            .header {
+              margin-bottom: 10px;
+            }
+          }
+        }
+
+        .navbar .menu-items {
+          padding-left: 20vw;
+      }
+
 }
 
-
-
+}

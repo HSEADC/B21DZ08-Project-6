@@ -71,3 +71,11 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
+
+const burgerMenu = document.querySelector('.burger-menu');
+const mobileNavigation = document.querySelector('.mobile-navigation');
+
+burgerMenu.addEventListener('click', () => {
+  mobileNavigation.classList.toggle('show');
+});
+

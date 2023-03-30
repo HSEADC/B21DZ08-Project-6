@@ -1,165 +1,312 @@
 body.start {
-  background-color: #9780C8;
-  font-family: 'Gilroy-Regular';
-
-  .grid {
-    justify-items: center;
-    margin: auto;
-    margin-top: 71px;
-    padding-left: 40px;
-    padding-right: 40px;
+  background-color: #101010;
+  #myBtnContainer {
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 130px;
+  }
+  .line2 {
+    height: 1px;
+    background-color: #F4F4F4;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .container {
+    a {
+      color: #F4F4F4;
+      text-decoration: none;
+    }
     display: grid;
-    max-width: max-content;
+    column-gap: 43px;
+    row-gap: 58px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 40px;
-    row-gap: 40px;
-  }
+    margin-top: 90px;
+    padding-left: 55px;
+    padding-right: 55px;
+    justify-items: center;
 
-  .card {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #101010;
-    width: 310px;
-    height: 178px;
-    padding-top: 14px;
-    padding-left: 19px;
-    padding-bottom: 14px;
-    padding-right: 19px;
-  }
-  .text {
-    font-family: 'Gilroy-Regular';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 101.5%;
-    color: #f4f4f4;
-  }
+    .flex:hover > .text { color: #F4F4F4;}
+    .flex:hover > .bottom { color: #F4F4F4;}
+    .flex:hover {
+      border: none;
+      background-color: #3C87B1;
+    }
+    .journalCard {
+      .flex {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: 1px solid #FFFFFF;
+      }
+      width: 100%;
+      // max-width: 310px;
+      .arrow {
+        width: 74px;
+      }
+      .header {
+        height: 80px;
+        padding-left: 20px;
+        line-height: 130%;
+        padding-right: 20px;
+        font-size: 32px;
+      }
 
-  .line {
-    display: flex;
-    justify-content: space-between;
-  }
+      .text {
+        height: 70px;
+        font-family: 'AtypDisplay-Light';
+        margin-top: 9px;
+        font-size: 16px;
+        line-height: 125%;
+        color: #7A7A7A;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
 
-  .card:hover {
-    background-color: #493F5D;
-  }
+      .time {
+        font-family: 'AtypDisplay-Light';
+        font-size: 13px;
+        line-height: 120%;
+      }
+      .image {
+        margin-top: 15px;
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      .bottom {
+        color: #7A7A7A;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
 
+    }
+  }
   
+  .filterDiv {
+    display: none; 
+    float: left;
+  }
+  
+  .show {
+    display: block;
+    
+
+  }
+  
+  .btn {
+    border: none;
+    outline: none;
+    font-family: 'AtypDisplay-Light';
+    padding: 12px 15px;
+    color: #9A9A9A;
+    font-size: 20px;
+    background-color: #101010;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    color: #F4F4F4;
+    background: #3C87B1;
+  }
+  
+  .btn.active {
+    color: #F4F4F4;
+    background: #3C87B1;
+  }
+
 
   footer {
-    color: #f4f4f4;
-    font-size: 20px;
-    img {
-      width: 156px;
-      height: 56px;
+    .hselogo {
+      width: 50%;
+      margin-top: 30px;
     }
-    padding-top: 56px;
-    padding-left: 53px;
-    padding-right: 53px;
-    margin-top: 114px;
-    background-color: #9780C8;
-    width: 100vw;
-    height: 232px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .column {
-    gap: 10px;
-    width: 175px;
-    display: flex;
-    flex-direction: column;
-  }
+    padding-top: 115px;
+    background-color: #3C87B1;
+    width: 100%;
+    height: 385px;
+    margin-top: 110px;
 
-  .column-sec {
-    gap: 10px;
-    width: 240px;
-    display: flex;
-    flex-direction: column;
-  }
+    .footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1.5fr;
+      justify-content: space-between;
+      padding-left: 55px;
+      padding-right: 55px;
+      font-family: 'AtypDisplay-Light';
+      .header {
+        font-family: 'AtypDisplay-Regular';
+        font-size: 20px;
+        margin-bottom: 40px;
+      }
+      a {
+        text-decoration: none;
+        color: #F4F4F4;
+        font-size: 15px;
+      }
+      .linksFlex {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+      }
+      .rass {
+        padding-left: 30px;
+      }
 
-  .authors {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+      .links {
+      }
 
-  .bold {
-    font-family: 'Gilroy-Semibold';
-  }
+      .form_group {
+        display: flex;
+        position: relative;
+        .form_label {
+          position: absolute;
+          top: 10px;
+          left: 0px;
+          z-index: 1;
+          transition: 0.3s;
+          color: #F4F4F4;
+      }
+        .form_input {
+          color: #F4F4F4;
+          font-size: 20px;
+            width: 22vw;
+            padding: 0 0 10px 0;
+            border: none;
+            border-bottom: 1px solid #F4F4F4;
+            background-color: transparent;
+            outline: none;
+            transition: 0.3s;
+        }
 
-  .footer-logos {
-    display: flex;
-    gap: 30px;
-  }
-  .inst {
-    width: 91px;
-  }
+        .ok {
+          color: #F4F4F4;
+          font-family: 'AtypDisplay-Bold';
+          position: inherit;
+          left: -30px;
+          top: 10px;
+        }
 
-
-
-  #info {
-    .scrollable-element {
-      scrollbar-color: red yellow;
-    }
-    overflow: scroll;
-    position: absolute;
-    top: 130px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    display: none;
-    padding-left: 94px;
-    padding-top: 85px;
-    padding-right: 20px;
-    padding-top: 17px;
-    color: #f4f4f4;
-    background-color: #101010;
-    width: 900px;
-    height: auto;
-    margin: auto;
-    font-family: 'Gilroy-Regular';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 27px;
-
-    header {
-      margin-top: 35px;
-      margin-bottom: 35px;
-      font-family: 'Gilroy-Regular';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 48px;
-      line-height: 106.99%;
+      }
+      .form_input:focus ~ .form_label,
+      .form_input:not(:placeholder-shown) ~ .form_label {
+      top: -18px;
+      font-size: 12px;
+      color: #e0e0e0;
+}
+      
     }
   }
-  .close {
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-  }
 
-  #overflow {
-    cursor: pointer;
-    display: none;
-    background-color: #000000;
-    opacity: 0.5;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-  }
 
-  p {
-    margin-top: 35px;
-    max-width: 550px;
-    margin-bottom: 35px;
+
+  @media screen and (max-width: 1100px) {
+    .container {
+      grid-template-columns: 1fr 1fr 1fr;
+      .journalCard {
+        .header {
+          font-size: 25px;
+        }
+        .text {
+          height: 85px;
+        }
+      }
+    }
+    nav {
+      display: block !important;
+    }
+    .O_header {
+      display: none;
+    }
+  
+  }
+    @media screen and (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr 1fr;
+        .journalCard {
+          .header {
+            font-size: 25px;
+          }
+          .text {
+            height: 85px;
+          }
+        }
+      }
+        footer {
+          height: 550px;
+          .footer {
+            grid-template-columns: 1fr 1fr 1fr;
+            .rass {
+              padding-left: 0;
+              margin-top: 30px;
+              grid-column-start: 1;
+              grid-column-end: 3;
+            }
+            .form_group {
+              .form_input {
+                width: 310px;
+              }
+            }
+          }
+        }
+      }
+  
+      @media screen and (max-width: 414px) {
+        #myBtnContainer {
+          padding-left: 20px;
+          padding-right: 20px;
+          margin-top: 130px;
+        }
+        .btn {
+          padding: 6px 10px;
+          font-size: 14px;
+          align-items: start;
+        }
+        .container {
+          margin-top: 60px;
+          padding-left: 20px;
+          padding-right: 20px;
+          grid-template-columns: 1fr;
+          .journalCard {
+            .header {
+              font-size: 25px;
+            }
+            .text {
+              height: 85px;
+            }
+          }
+          
+        }
+          .nav-container .checkbox {
+            right: 35px;
+          }
+          .nav-container .hamburger-lines {
+            right: 35px;
+          }
+          .logo {
+            left: 20px;
+  
+          }
+          footer {
+            height: 670px;
+            padding-top: 60px;
+            .footer {
+              grid-template-columns: 1fr 1fr;
+              row-gap: 30px;
+              padding-left: 20px;
+              padding-right: 20px;
+              .header {
+                margin-bottom: 10px;
+              }
+            }
+          }
+  
+          .navbar .menu-items {
+            padding-left: 20vw;
+        }
+  
   }
 
 }

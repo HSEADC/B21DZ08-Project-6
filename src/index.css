@@ -17,7 +17,8 @@
 @import 'stylesheets/fole-texture.scss';
 
 @import 'stylesheets/style_guide.scss';
-@import 'stylesheets/lettering.scss';
+@import 'stylesheets/art.scss';
+@import 'stylesheets/music.scss';
 
 @import 'stylesheets/pixelcompare.css';
 @import 'stylesheets/pixelcompare.min.css';

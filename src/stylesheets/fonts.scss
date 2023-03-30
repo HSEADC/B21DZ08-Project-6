@@ -149,3 +149,13 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'AtypDisplay-Medium';
+  src: url('fonts/AtypDisplay-Medium.ttf') format('ttf'),
+    url('fonts/AtypDisplay-Medium.woff2') format('woff2'),
+    url('fonts/AtypDisplay-Medium.woff') format('woff');
+  font-weight: light;
+  font-style: normal;
+  font-display: swap;
+}
+
